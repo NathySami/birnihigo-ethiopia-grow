@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
 import { Droplets, Flame, Leaf, Recycle, Sun, Users, Sprout, Zap } from "lucide-react";
+import { ValueChainFlow } from "@/components/site/ValueChainFlow";
 import sustain from "@/assets/sustainability.jpg";
 import farmGrow from "@/assets/farm-grow-out.jpg";
 import farmFeederCloseup from "@/assets/farm-feeder-closeup.jpg";
@@ -21,6 +22,31 @@ export default function Sustainability() {
         title="Sustainability through system design — not as an add-on."
         subtitle="Our climate-resilient, low-emission, and environmentally sustainable production system aligns with global ESG priorities and Ethiopia's food security ambitions."
       />
+
+      {/* 100% Circular Waste-to-Resource highlight */}
+      <section className="bg-gradient-cafe py-16 text-primary-foreground">
+        <div className="container-wide grid items-center gap-8 md:grid-cols-12">
+          <div className="md:col-span-8">
+            <p className="eyebrow !text-secondary">Closed-Loop System</p>
+            <h2 className="mt-4 text-3xl font-bold leading-tight md:text-5xl text-balance">
+              <span className="text-secondary">100% Circular</span> Waste-to-Resource System
+            </h2>
+            <p className="mt-4 text-base text-primary-foreground/80 md:text-lg">
+              Every output reclaimed — converted into organic fertilizer and renewable energy that powers the next cycle of production.
+            </p>
+          </div>
+          <div className="md:col-span-4 grid grid-cols-2 gap-3">
+            <div className="rounded-2xl border border-secondary/30 bg-primary-foreground/5 p-4 text-center">
+              <Sprout className="mx-auto h-6 w-6 text-secondary" />
+              <p className="mt-2 text-xs font-semibold uppercase tracking-widest text-primary-foreground/80">Fertilizer</p>
+            </div>
+            <div className="rounded-2xl border border-secondary/30 bg-primary-foreground/5 p-4 text-center">
+              <Zap className="mx-auto h-6 w-6 text-secondary" />
+              <p className="mt-2 text-xs font-semibold uppercase tracking-widest text-primary-foreground/80">Renewable Energy</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="bg-background py-24">
         <div className="container-wide grid gap-12 lg:grid-cols-12 lg:items-center">
