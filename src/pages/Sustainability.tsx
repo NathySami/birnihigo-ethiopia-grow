@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
-import { Droplets, Flame, Leaf, Recycle, Sun, Users } from "lucide-react";
+import { Droplets, Flame, Leaf, Recycle, Sun, Users, Sprout, Zap } from "lucide-react";
 import sustain from "@/assets/sustainability.jpg";
 
 const groups = [
@@ -59,6 +59,44 @@ export default function Sustainability() {
               </div>
             </Reveal>
           ))}
+        </div>
+      </section>
+
+      {/* Waste management — circular model */}
+      <section className="bg-background py-24">
+        <div className="container-wide">
+          <div className="grid gap-12 lg:grid-cols-12 lg:items-start">
+            <div className="lg:col-span-5">
+              <Reveal><p className="eyebrow">Waste Management</p></Reveal>
+              <Reveal delay={0.05}>
+                <h2 className="mt-5 text-3xl font-bold tracking-tight text-primary md:text-4xl text-balance">
+                  A true circular model — where no resource is wasted.
+                </h2>
+              </Reveal>
+              <Reveal delay={0.1}>
+                <p className="mt-6 text-lg leading-relaxed text-foreground/75">
+                  At Birnihigo Integrated Farms, sustainability is embedded in every stage of our operation. Our waste management system transforms <strong className="text-primary">100% of organic solid and liquid waste</strong> into valuable outputs — high-grade organic fertilizer used in our crop cultivation, treated clean water, and renewable biogas energy.
+                </p>
+              </Reveal>
+            </div>
+            <div className="lg:col-span-7 grid gap-5 sm:grid-cols-3">
+              {[
+                { icon: Sprout, title: "Organic Fertilizer", body: "High-grade fertilizer that powers our 2,000+ ha of maize and soybean cultivation." },
+                { icon: Droplets, title: "Treated Clean Water", body: "Liquid waste treated and reused across operations — closing the water loop." },
+                { icon: Zap, title: "Renewable Biogas", body: "On-site biogas generation that offsets fossil energy consumption." },
+              ].map((c, i) => (
+                <Reveal key={c.title} delay={i * 0.07}>
+                  <div className="h-full rounded-2xl border border-border bg-card p-6 shadow-card">
+                    <div className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-saffron text-secondary-foreground">
+                      <c.icon className="h-5 w-5" />
+                    </div>
+                    <h3 className="mt-5 text-lg font-bold text-primary">{c.title}</h3>
+                    <p className="mt-2 text-sm leading-relaxed text-foreground/70">{c.body}</p>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
     </>
