@@ -2,19 +2,21 @@ import { useEffect } from "react";
 import { ArrowUpRight } from "lucide-react";
 import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
-import broilers from "@/assets/broilers.jpg";
+import broilers from "@/assets/farm-broilers-detail.jpg";
 import farmer from "@/assets/farmer.jpg";
 import sustain from "@/assets/sustainability.jpg";
-import feed from "@/assets/feedmill.jpg";
+import feed from "@/assets/farm-broiler-house.jpg";
 import meat from "@/assets/chicken-meat.jpg";
+import facility from "@/assets/facility-exterior.jpg";
+import grow from "@/assets/farm-grow-out.jpg";
 
 const posts = [
-  { img: broilers, cat: "Sector", title: "Ethiopia's poultry sector — beyond the production lens", excerpt: "Why integration, not just production, is the unlock for affordable protein at national scale." },
+  { img: facility, cat: "Sector", title: "Ethiopia's poultry sector — beyond the production lens", excerpt: "Why integration, not just production, is the unlock for affordable protein at national scale." },
   { img: meat, cat: "Quality", title: "Halal-certified processing, explained", excerpt: "What our halal certification really means — animal welfare, traceability, and ethical poultry production." },
   { img: farmer, cat: "Community", title: "Contract farming with purpose", excerpt: "How Birnihigo is empowering thousands of associations of women and youth across Ethiopia." },
   { img: sustain, cat: "Climate", title: "Why Moringa? The science behind our eco-feed initiative", excerpt: "From climate resilience to poultry health — a closer look at our moringa integration." },
   { img: feed, cat: "Operations", title: "Inside our bio-secure, future-ready facilities", excerpt: "A walk through the design choices that make Birnihigo's farms resilient and scalable." },
-  { img: broilers, cat: "Story", title: "From the land of origins — Afar — to every table we serve", excerpt: "A promise of nourishment, dignity, and purpose, written into our origin story." },
+  { img: grow, cat: "Story", title: "From the land of origins — Afar — to every table we serve", excerpt: "A promise of nourishment, dignity, and purpose, written into our origin story." },
 ];
 
 export default function Insights() {

@@ -3,6 +3,7 @@ import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
 import { Droplets, Flame, Leaf, Recycle, Sun, Users, Sprout, Zap } from "lucide-react";
 import sustain from "@/assets/sustainability.jpg";
+import farmGrow from "@/assets/farm-grow-out.jpg";
 
 const groups = [
   { title: "Circular Economy", icon: Recycle, items: ["100% waste converted to fertilizer", "99.9% treated water reuse", "On-site biogas production"] },
@@ -23,7 +24,7 @@ export default function Sustainability() {
       <section className="bg-background py-24">
         <div className="container-wide grid gap-12 lg:grid-cols-12 lg:items-center">
           <Reveal>
-            <img src={sustain} alt="Moringa leaves and organic fertilizer pellets" className="lg:col-span-5 w-full rounded-[2rem] object-cover h-[480px] shadow-elegant" loading="lazy" width={1280} height={960} />
+            <img src={farmGrow} alt="Healthy broiler flock in a Birnihigo bio-secure grow-out house — sustainable, controlled production" className="lg:col-span-5 w-full rounded-[2rem] object-cover h-[480px] shadow-elegant" loading="lazy" width={1280} height={960} />
           </Reveal>
           <div className="lg:col-span-7 grid gap-4 sm:grid-cols-2">
             {[
