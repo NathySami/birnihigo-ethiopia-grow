@@ -29,8 +29,8 @@ export const Logo = ({ variant = "primary", className = "h-10", asLink = true }:
       src={sources[variant]}
       alt="Birnihigo Integrated Farms"
       className={`${className} w-auto object-contain`}
-      width={540}
-      height={250}
+      width={600}
+      height={300}
       loading="eager"
       decoding="async"
     />
