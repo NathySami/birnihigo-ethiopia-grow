@@ -1,13 +1,14 @@
 import { useEffect } from "react";
-import { Building2, Egg, Factory, Sprout, Truck, Wheat, CheckCircle2 } from "lucide-react";
+import { Building2, Egg, Factory, Sprout, Truck, Wheat, CheckCircle2, MapPin } from "lucide-react";
 import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
+import { ValueChainFlow } from "@/components/site/ValueChainFlow";
 import farmHouse from "@/assets/farm-broiler-house.jpg";
 
 const stages = [
   { icon: Egg, title: "Parent Stock Farm", body: "Our integrated value chain begins not at the hatchery but at the parent stock farm — securing the genetic foundation for productivity and product quality." },
   { icon: Sprout, title: "Hatchery", body: "Controlled incubation delivering high-quality, disease-free day-old chicks." },
-  { icon: Wheat, title: "Feed Mill & Crop Cultivation", body: "A fully integrated feed mill with 6 tons/hour capacity producing diverse animal feed — primarily high-quality poultry feed in mash, crumble and pellet forms — fed by 2,000+ hectares of maize and soybean cultivation." },
+  { icon: Wheat, title: "Feed Mill & Crop Cultivation", body: "A 6 tons/hour feed mill designed to produce nutritionally optimized poultry and cattle feed in mash, crumble and pellet forms — supporting both in-house production and contract farming. Integrated with 2,000+ hectares of maize and soybean cultivation secured under a 55-year regional government lease, located within 40 km of the mill, driving self-sufficiency in high-quality feed ingredients." },
   { icon: Building2, title: "Broiler Production", body: "Company-owned farms plus a growing contract farming network." },
   { icon: Factory, title: "Halal-Certified Processing", body: "HACCP-aligned, Halal-certified processing facility with 48 tons/day capacity." },
   { icon: Truck, title: "Cold Chain & Distribution", body: "End-to-end logistics ensuring product integrity from plant to market." },
@@ -26,6 +27,9 @@ export default function Model() {
         image={farmHouse}
         imageAlt="Long view inside a Birnihigo broiler house — automated feeding lines and bio-secure environment"
       />
+
+      {/* End-to-end visual flow */}
+      <ValueChainFlow />
 
       <section className="bg-background py-24">
         <div className="container-wide">
@@ -67,6 +71,39 @@ export default function Model() {
               </Reveal>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Operations footprint */}
+      <section className="bg-cream py-20">
+        <div className="container-wide grid gap-6 md:grid-cols-2">
+          <Reveal>
+            <div className="h-full rounded-[2rem] border border-border bg-background p-8 shadow-card">
+              <div className="flex items-center gap-3 text-secondary">
+                <MapPin className="h-5 w-5" />
+                <span className="text-xs font-bold uppercase tracking-widest">Operations & Production Site</span>
+              </div>
+              <h3 className="mt-4 text-2xl font-bold text-primary">Awash Sebat, Afar Region, Ethiopia</h3>
+              <p className="mt-2 text-sm font-semibold text-bronze">Primary Production & Processing Hub</p>
+              <p className="mt-4 text-foreground/70 leading-relaxed">
+                Hatchery, broiler farms, feed mill and processing facility — 42+ hectares of integrated, bio-secure operations.
+              </p>
+              <p className="mt-4 text-sm font-semibold text-primary">Tel: +251 22 241 3101</p>
+            </div>
+          </Reveal>
+          <Reveal delay={0.08}>
+            <div className="h-full rounded-[2rem] border border-border bg-background p-8 shadow-card">
+              <div className="flex items-center gap-3 text-secondary">
+                <MapPin className="h-5 w-5" />
+                <span className="text-xs font-bold uppercase tracking-widest">Corporate Liaison Office</span>
+              </div>
+              <h3 className="mt-4 text-2xl font-bold text-primary">Addis Ababa, Ethiopia</h3>
+              <p className="mt-2 text-sm font-semibold text-bronze">Administrative Coordination, Stakeholder Engagement & Partnerships</p>
+              <p className="mt-4 text-foreground/70 leading-relaxed">
+                Kazanchis Garad Building, in front of ECA, 10th floor, Room 02 — investor relations, government liaison, and partnerships.
+              </p>
+            </div>
+          </Reveal>
         </div>
       </section>
     </>
