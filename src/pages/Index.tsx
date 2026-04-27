@@ -154,8 +154,8 @@ const Index = () => {
                 </h2>
               </Reveal>
             </div>
-            <Reveal delay={0.1}>
-              <p className="md:col-span-5 text-base text-foreground/70 leading-relaxed">
+            <Reveal delay={0.1} className="md:col-span-5">
+              <p className="text-base text-foreground/70 leading-relaxed">
                 Birnihigo operates a fully integrated system covering breeding, hatchery, feed, broiler farming, processing, cold chain and distribution — ensuring cost efficiency, quality control, and scalability.
               </p>
             </Reveal>
