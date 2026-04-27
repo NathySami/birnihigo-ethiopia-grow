@@ -46,7 +46,7 @@ const Index = () => {
   return (
     <>
       {/* HERO */}
-      <section className="relative isolate min-h-[100svh] overflow-hidden">
+      <section className="relative isolate min-h-[calc(100svh-5rem)] overflow-hidden">
         <div className="absolute inset-0 -z-10">
           <img
             src={hero}
@@ -58,7 +58,7 @@ const Index = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-primary-deep via-primary-deep/30 to-transparent" />
         </div>
 
-        <div className="container-wide flex min-h-[100svh] flex-col justify-end pb-16 pt-40 md:pb-24">
+        <div className="container-wide flex min-h-[calc(100svh-5rem)] flex-col justify-end pb-16 pt-24 md:pb-24 md:pt-28">
           <motion.div
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}

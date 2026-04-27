@@ -8,7 +8,7 @@ interface PageHeroProps {
 }
 
 export const PageHero = ({ eyebrow, title, subtitle, align = "left" }: PageHeroProps) => (
-  <section className="relative overflow-hidden bg-gradient-cream pt-36 pb-20 md:pt-44 md:pb-28">
+  <section className="relative overflow-hidden bg-gradient-cream pt-20 pb-20 md:pt-28 md:pb-28">
     <div className="absolute inset-0 -z-10 opacity-40 [mask-image:radial-gradient(60%_60%_at_70%_30%,black,transparent)]">
       <div className="absolute -top-32 right-1/4 h-[28rem] w-[28rem] rounded-full bg-secondary/30 blur-3xl" />
       <div className="absolute -bottom-32 left-0 h-[24rem] w-[24rem] rounded-full bg-bronze/20 blur-3xl" />
