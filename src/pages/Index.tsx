@@ -2,11 +2,17 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowRight, ArrowUpRight, Building2, Egg, Factory, Leaf, Recycle, ShieldCheck, Sprout, Truck, Wheat } from "lucide-react";
-import hero from "@/assets/hero-farm.jpg";
-import broilers from "@/assets/broilers.jpg";
+import hero from "@/assets/farm-broiler-house.jpg";
+import broilers from "@/assets/farm-broilers-detail.jpg";
 import sustain from "@/assets/sustainability.jpg";
 import farmer from "@/assets/farmer.jpg";
 import feedmill from "@/assets/feedmill.jpg";
+import facility from "@/assets/facility-exterior.jpg";
+import farmYoung from "@/assets/farm-young-flock.jpg";
+import farmGrow from "@/assets/farm-grow-out.jpg";
+import farmFeeders from "@/assets/farm-feeders-rows.jpg";
+import farmFeeding from "@/assets/farm-feeding.jpg";
+import farmFeederCloseup from "@/assets/farm-feeder-closeup.jpg";
 import { Reveal } from "@/components/site/Reveal";
 import { Logo } from "@/components/site/Logo";
 
@@ -51,7 +57,7 @@ const Index = () => {
         <div className="absolute inset-0 -z-10">
           <img
             src={hero}
-            alt="Aerial view of Birnihigo Integrated Farms biosecure complex at golden hour in Ethiopia"
+            alt="Inside a Birnihigo broiler house — thousands of healthy birds in a bio-secured, climate-controlled environment"
             className={`h-full w-full object-cover ${reduce ? "" : "animate-slow-zoom"}`}
             width={1920} height={1280}
           />
@@ -228,7 +234,7 @@ const Index = () => {
       {/* CAPACITY — bold stat band */}
       <section className="relative overflow-hidden bg-gradient-cafe py-24 text-primary-foreground md:py-32">
         <div className="absolute inset-0 -z-10 opacity-25">
-          <img src={feedmill} alt="" className="h-full w-full object-cover" loading="lazy" width={1280} height={960} />
+          <img src={facility} alt="" className="h-full w-full object-cover" loading="lazy" width={1920} height={1080} />
           <div className="absolute inset-0 bg-gradient-cafe opacity-80" />
         </div>
         <div className="container-wide">
@@ -260,6 +266,57 @@ const Index = () => {
         </div>
       </section>
 
+      {/* INSIDE THE FARM — real photo gallery */}
+      <section className="relative bg-background py-24 md:py-32">
+        <div className="container-wide">
+          <div className="grid gap-10 md:grid-cols-12 md:items-end">
+            <div className="md:col-span-7">
+              <Reveal><p className="eyebrow">Inside the Farm</p></Reveal>
+              <Reveal delay={0.05}>
+                <h2 className="mt-5 text-3xl font-bold tracking-tight text-primary md:text-5xl text-balance">
+                  A look inside our <span className="text-secondary">bio-secured</span> operations.
+                </h2>
+              </Reveal>
+            </div>
+            <Reveal delay={0.1}>
+              <p className="md:col-span-5 text-base leading-relaxed text-foreground/70">
+                From parent stock houses and brooding rooms to grow-out barns and feed infrastructure — every stage runs under controlled, science-driven conditions.
+              </p>
+            </Reveal>
+          </div>
+
+          <div className="mt-14 grid gap-4 md:grid-cols-12 md:grid-rows-2">
+            <Reveal>
+              <figure className="relative overflow-hidden rounded-3xl border border-border shadow-card md:col-span-7 md:row-span-2 group">
+                <img src={hero} alt="Long Birnihigo broiler house with thousands of birds, automated feeding lines and ventilation" className="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-[1.04]" loading="lazy" width={1920} height={1280} />
+                <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-primary-deep/85 to-transparent p-6 text-primary-foreground">
+                  <p className="text-xs font-semibold uppercase tracking-widest text-secondary">Parent Stock Farm</p>
+                  <p className="mt-1 text-lg font-bold">Climate-controlled, automated, biosecure.</p>
+                </figcaption>
+              </figure>
+            </Reveal>
+            <Reveal delay={0.06}>
+              <figure className="relative overflow-hidden rounded-3xl border border-border shadow-card md:col-span-5 group">
+                <img src={farmYoung} alt="Young broiler chicks feeding around pan feeders inside a Birnihigo brooding house" className="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-[1.04]" loading="lazy" width={1280} height={960} />
+                <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-primary-deep/85 to-transparent p-5 text-primary-foreground">
+                  <p className="text-xs font-semibold uppercase tracking-widest text-secondary">Brooding</p>
+                  <p className="mt-0.5 text-base font-bold">Day-old chicks, expertly raised.</p>
+                </figcaption>
+              </figure>
+            </Reveal>
+            <Reveal delay={0.12}>
+              <figure className="relative overflow-hidden rounded-3xl border border-border shadow-card md:col-span-5 group">
+                <img src={farmFeeders} alt="Rows of automated pan feeders surrounded by healthy white broilers at a Birnihigo grow-out house" className="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-[1.04]" loading="lazy" width={1280} height={960} />
+                <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-primary-deep/85 to-transparent p-5 text-primary-foreground">
+                  <p className="text-xs font-semibold uppercase tracking-widest text-secondary">Grow-out</p>
+                  <p className="mt-0.5 text-base font-bold">Industrial-scale broiler production.</p>
+                </figcaption>
+              </figure>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
       {/* RESILIENCE */}
       <section className="relative bg-background py-24 md:py-32">
         <div className="container-wide grid gap-14 lg:grid-cols-12 lg:items-center">
@@ -285,7 +342,7 @@ const Index = () => {
           </div>
           <Reveal delay={0.1}>
             <div className="lg:col-span-6">
-              <img src={broilers} alt="Healthy white broiler chickens inside a modern bio-secure poultry house" className="w-full rounded-[2rem] object-cover h-[480px] shadow-elegant" loading="lazy" width={1280} height={960} />
+              <img src={farmGrow} alt="Birnihigo grow-out house in Afar showing climate-resilient design and large healthy broiler flock" className="w-full rounded-[2rem] object-cover h-[480px] shadow-elegant" loading="lazy" width={1280} height={960} />
             </div>
           </Reveal>
         </div>
