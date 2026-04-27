@@ -11,8 +11,6 @@ import facility from "@/assets/facility-exterior.jpg";
 import farmYoung from "@/assets/farm-young-flock.jpg";
 import farmGrow from "@/assets/farm-grow-out.jpg";
 import farmFeeders from "@/assets/farm-feeders-rows.jpg";
-import farmFeeding from "@/assets/farm-feeding.jpg";
-import farmFeederCloseup from "@/assets/farm-feeder-closeup.jpg";
 import { Reveal } from "@/components/site/Reveal";
 import { Logo } from "@/components/site/Logo";
 

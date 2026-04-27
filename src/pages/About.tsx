@@ -5,6 +5,7 @@ import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
 import { Logo } from "@/components/site/Logo";
 import hoopoe from "@/assets/hoopoe.jpg";
+import farmFeeding from "@/assets/farm-feeding.jpg";
 
 const timeline = [
   {
@@ -139,14 +140,26 @@ export default function About() {
 
       {/* Today, We Are Committed To */}
       <section className="bg-background pb-24">
-        <div className="container-wide">
-          <Reveal><p className="eyebrow">Today, We Are Committed To</p></Reveal>
-          <Reveal delay={0.05}>
-            <h2 className="mt-5 text-3xl font-bold tracking-tight text-primary md:text-4xl">
-              Five commitments that guide every decision we make.
-            </h2>
-          </Reveal>
-          <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <div className="container-wide grid gap-12 lg:grid-cols-12 lg:items-start">
+          <div className="lg:col-span-5">
+            <Reveal><p className="eyebrow">Today, We Are Committed To</p></Reveal>
+            <Reveal delay={0.05}>
+              <h2 className="mt-5 text-3xl font-bold tracking-tight text-primary md:text-4xl">
+                Five commitments that guide every decision we make.
+              </h2>
+            </Reveal>
+            <Reveal delay={0.1}>
+              <img
+                src={farmFeeding}
+                alt="Healthy broiler chickens feeding inside a Birnihigo bio-secure house in Awash, Afar"
+                className="mt-8 w-full rounded-[2rem] object-cover h-[360px] shadow-elegant"
+                loading="lazy"
+                width={1280}
+                height={960}
+              />
+            </Reveal>
+          </div>
+          <div className="lg:col-span-7 grid gap-5 sm:grid-cols-2">
             {commitments.map((c, i) => (
               <Reveal key={c.text} delay={i * 0.06}>
                 <div className="h-full rounded-2xl border border-border bg-card p-7 shadow-card">
