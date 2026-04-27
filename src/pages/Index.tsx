@@ -59,34 +59,35 @@ const Index = () => {
             className={`h-full w-full object-cover ${reduce ? "" : "animate-slow-zoom"}`}
             width={1920} height={1280}
           />
-          <div className="absolute inset-0 bg-gradient-hero" />
-          <div className="absolute inset-0 bg-gradient-to-t from-primary-deep via-primary-deep/30 to-transparent" />
+          {/* Brand-tinted veil — café noir + saffron warmth (no gray) */}
+          <div className="absolute inset-0 bg-gradient-to-br from-primary-deep/70 via-primary/40 to-secondary/25" />
+          <div className="absolute inset-0 bg-gradient-to-t from-primary-deep/85 via-primary-deep/30 to-transparent" />
         </div>
 
-        <div className="container-wide flex min-h-[calc(100svh-5rem)] flex-col justify-end pb-16 pt-24 md:pb-24 md:pt-28">
+        <div className="container-wide flex min-h-[calc(100svh-5rem)] flex-col items-center justify-center pb-16 pt-12 md:pb-24 md:pt-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-            className="max-w-4xl"
+            className="relative w-full max-w-5xl rounded-[2rem] border border-primary-foreground/15 bg-primary-deep/35 px-6 py-12 text-center shadow-elegant backdrop-blur-md md:px-12 md:py-16"
           >
-            <span className="inline-flex items-center gap-2 rounded-full border border-secondary/40 bg-primary-deep/40 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-secondary backdrop-blur-md">
-              <span className="h-1.5 w-1.5 rounded-full bg-secondary animate-pulse" />
-              Ethiopia · National Scale Agricultural Platform
-            </span>
-            <h1 className="mt-6 text-4xl font-bold leading-[1.04] tracking-tight text-primary-foreground sm:text-5xl md:text-6xl lg:text-7xl text-balance">
-              Building Ethiopia's First<br />
-              <span className="text-secondary">Fully Integrated</span> Poultry System
-            </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-primary-foreground/85 md:text-xl text-pretty">
-              A vertically integrated agribusiness platform designed to solve Ethiopia's poultry system inefficiencies through industrial-scale production, biosecurity excellence, and market integration.
+            <p className="text-xs font-bold uppercase tracking-[0.4em] text-secondary md:text-sm">
+              Birnihigo Integrated Farms
             </p>
-            <div className="mt-10 flex flex-wrap items-center gap-4">
-              <Link to="/investors" className="group inline-flex items-center gap-2 rounded-full bg-secondary px-7 py-4 text-base font-semibold text-secondary-foreground shadow-saffron transition-all hover:scale-[1.03] hover:shadow-elegant">
-                Explore Investment Opportunity
+            <h1 className="mt-8 text-5xl font-extrabold uppercase leading-[0.95] tracking-tight text-primary-foreground sm:text-6xl md:text-7xl lg:text-[5.5rem] text-balance">
+              Pioneering East<br />
+              Africa's<br />
+              <span className="text-secondary">Food Security</span>
+            </h1>
+            <p className="mx-auto mt-8 max-w-2xl text-base leading-relaxed text-primary-foreground/85 md:text-lg text-pretty">
+              42 hectares of vertically integrated poultry excellence — from hatchery to halal-certified processing.
+            </p>
+            <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+              <Link to="/about" className="group inline-flex items-center gap-2 rounded-full bg-gradient-saffron px-8 py-4 text-base font-bold text-secondary-foreground shadow-saffron transition-all hover:scale-[1.03] hover:shadow-elegant">
+                Our Story
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
-              <Link to="/contact" className="group inline-flex items-center gap-2 rounded-full border border-primary-foreground/30 bg-primary-foreground/5 px-7 py-4 text-base font-semibold text-primary-foreground backdrop-blur-md transition-all hover:bg-primary-foreground hover:text-primary">
-                Partner With Us
+              <Link to="/investors" className="group inline-flex items-center gap-2 rounded-full border border-secondary/60 bg-primary-deep/40 px-8 py-4 text-base font-bold text-primary-foreground backdrop-blur-md transition-all hover:bg-secondary hover:text-secondary-foreground hover:border-secondary">
+                Investor Relations
                 <ArrowUpRight className="h-4 w-4 transition-transform group-hover:rotate-45" />
               </Link>
             </div>
@@ -96,7 +97,7 @@ const Index = () => {
           <motion.div
             initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="mt-16 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-primary-foreground/15 bg-primary-foreground/10 backdrop-blur-xl md:grid-cols-4"
+            className="mt-10 grid w-full max-w-5xl grid-cols-2 gap-px overflow-hidden rounded-2xl border border-primary-foreground/15 bg-primary-foreground/10 backdrop-blur-xl md:grid-cols-4"
           >
             {metrics.map((m, i) => (
               <div key={i} className="bg-primary-deep/50 p-6 md:p-7">
