@@ -39,7 +39,7 @@ const sustainPillars = [
 
 const Index = () => {
   useEffect(() => {
-    document.title = "Birnihigo Integrated Farms — Ethiopia's First Fully Integrated Poultry System";
+    document.title = "Birnihigo Integrated Farms — Ethiopia's First Fully Integrated Poultry System at Scale";
     const meta = document.querySelector('meta[name="description"]') ?? document.createElement("meta");
     meta.setAttribute("name", "description");
     meta.setAttribute("content", "Birnihigo Integrated Farms is Ethiopia's first vertically integrated poultry platform delivering affordable, halal, export-ready protein at national scale.");
