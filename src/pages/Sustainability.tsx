@@ -3,6 +3,8 @@ import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
 import { Droplets, Flame, Leaf, Recycle, Sun, Users, Sprout, Zap } from "lucide-react";
 import sustain from "@/assets/sustainability.jpg";
+import farmGrow from "@/assets/farm-grow-out.jpg";
+import farmFeederCloseup from "@/assets/farm-feeder-closeup.jpg";
 
 const groups = [
   { title: "Circular Economy", icon: Recycle, items: ["100% waste converted to fertilizer", "99.9% treated water reuse", "On-site biogas production"] },
@@ -23,7 +25,7 @@ export default function Sustainability() {
       <section className="bg-background py-24">
         <div className="container-wide grid gap-12 lg:grid-cols-12 lg:items-center">
           <Reveal>
-            <img src={sustain} alt="Moringa leaves and organic fertilizer pellets" className="lg:col-span-5 w-full rounded-[2rem] object-cover h-[480px] shadow-elegant" loading="lazy" width={1280} height={960} />
+            <img src={farmGrow} alt="Healthy broiler flock in a Birnihigo bio-secure grow-out house — sustainable, controlled production" className="lg:col-span-5 w-full rounded-[2rem] object-cover h-[480px] shadow-elegant" loading="lazy" width={1280} height={960} />
           </Reveal>
           <div className="lg:col-span-7 grid gap-4 sm:grid-cols-2">
             {[
@@ -77,6 +79,16 @@ export default function Sustainability() {
                 <p className="mt-6 text-lg leading-relaxed text-foreground/75">
                   At Birnihigo Integrated Farms, sustainability is embedded in every stage of our operation. Our waste management system transforms <strong className="text-primary">100% of organic solid and liquid waste</strong> into valuable outputs — high-grade organic fertilizer used in our crop cultivation, treated clean water, and renewable biogas energy.
                 </p>
+              </Reveal>
+              <Reveal delay={0.15}>
+                <img
+                  src={farmFeederCloseup}
+                  alt="Close-up of automated pan feeders surrounded by healthy broilers — efficient feed conversion that reduces waste"
+                  className="mt-8 w-full rounded-[2rem] object-cover h-[280px] shadow-elegant"
+                  loading="lazy"
+                  width={1280}
+                  height={960}
+                />
               </Reveal>
             </div>
             <div className="lg:col-span-7 grid gap-5 sm:grid-cols-3">

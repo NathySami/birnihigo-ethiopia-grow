@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Building2, Egg, Factory, Sprout, Truck, Wheat, CheckCircle2 } from "lucide-react";
 import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
+import farmHouse from "@/assets/farm-broiler-house.jpg";
 
 const stages = [
   { icon: Egg, title: "Parent Stock Farm", body: "Our integrated value chain begins not at the hatchery but at the parent stock farm — securing the genetic foundation for productivity and product quality." },
@@ -22,6 +23,8 @@ export default function Model() {
         eyebrow="Our Model"
         title="From Farm to Fork: a fully integrated system."
         subtitle="Birnihigo integrates every stage of poultry production into one coordinated, traceable, execution-driven system."
+        image={farmHouse}
+        imageAlt="Long view inside a Birnihigo broiler house — automated feeding lines and bio-secure environment"
       />
 
       <section className="bg-background py-24">

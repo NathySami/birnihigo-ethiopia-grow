@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Banknote, Building, Download, Globe2, Mail, Package, Wheat } from "lucide-react";
 import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
+import facility from "@/assets/facility-exterior.jpg";
 
 const cases = [
   { title: "Structural Market Gap", body: "Low protein consumption and a fragmented production system create a sizeable, durable opportunity." },
@@ -27,6 +28,8 @@ export default function Investors() {
         eyebrow="Investor Relations"
         title="An investment in system transformation."
         subtitle="Beyond production volumes, Birnihigo is designed to deliver real impact — improving affordability, strengthening system efficiency, and ensuring consistent market supply."
+        image={facility}
+        imageAlt="Birnihigo Integrated Farms processing facility exterior under an Ethiopian sky"
       />
 
       <section className="bg-background py-24">
