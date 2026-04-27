@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { ArrowRight, Building2, Handshake, Mail, MapPin, Phone, TrendingUp, Users } from "lucide-react";
 import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
+import { Logo } from "@/components/site/Logo";
 import { toast } from "sonner";
 
 const types = [
@@ -54,8 +55,13 @@ export default function Contact() {
           {/* Form */}
           <Reveal delay={0.1}>
             <form onSubmit={submit} className="lg:col-span-7 rounded-[2rem] bg-gradient-cafe p-8 text-primary-foreground shadow-elegant md:p-12">
-              <p className="eyebrow !text-secondary">Send a message</p>
-              <h2 className="mt-4 text-2xl font-bold md:text-3xl text-balance">Tell us how we can collaborate.</h2>
+              <div className="flex items-center gap-4">
+                <Logo variant="icon-cafe" asLink={false} className="h-14 rounded-xl ring-1 ring-secondary/30" />
+                <div>
+                  <p className="eyebrow !text-secondary">Send a message</p>
+                  <h2 className="mt-2 text-2xl font-bold md:text-3xl text-balance">Tell us how we can collaborate.</h2>
+                </div>
+              </div>
 
               <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-3">
                 {types.map((t) => {

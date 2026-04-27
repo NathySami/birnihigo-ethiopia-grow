@@ -8,6 +8,7 @@ import sustain from "@/assets/sustainability.jpg";
 import farmer from "@/assets/farmer.jpg";
 import feedmill from "@/assets/feedmill.jpg";
 import { Reveal } from "@/components/site/Reveal";
+import { Logo } from "@/components/site/Logo";
 
 const metrics = [
   { value: "48", suffix: "T/day", label: "Processing Capacity" },
@@ -136,7 +137,12 @@ const Index = () => {
         <div className="container-wide">
           <div className="grid gap-10 md:grid-cols-12 md:items-end">
             <div className="md:col-span-7">
-              <Reveal><p className="eyebrow">Our Model</p></Reveal>
+              <Reveal>
+                <div className="flex items-center gap-4">
+                  <Logo variant="icon-saffron" asLink={false} className="h-12 rounded-xl shadow-soft" />
+                  <p className="eyebrow">Our Model</p>
+                </div>
+              </Reveal>
               <Reveal delay={0.05}>
                 <h2 className="mt-5 text-3xl font-bold tracking-tight text-primary md:text-5xl text-balance">
                   An integrated poultry value chain — <span className="text-secondary">from farm to fork.</span>
