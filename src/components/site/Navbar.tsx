@@ -53,8 +53,8 @@ export const Navbar = () => {
         scrolled || open ? "shadow-soft" : ""
       )}
     >
-      <nav className="container-wide flex h-20 items-center justify-between gap-6">
-        <Logo variant="primary" className={cn("transition-all", scrolled ? "h-9" : "h-12")} />
+      <nav className="container-wide flex h-24 items-center justify-between gap-6">
+        <Logo variant="primary" className={cn("transition-all", scrolled ? "h-14" : "h-20")} />
 
         <ul
           className="hidden lg:flex items-center gap-1"
