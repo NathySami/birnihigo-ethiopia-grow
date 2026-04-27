@@ -21,7 +21,7 @@ export const Navbar = () => {
   const location = useLocation();
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24);
+    const onScroll = () => setScrolled(window.scrollY > 8);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
@@ -32,14 +32,12 @@ export const Navbar = () => {
   return (
     <header
       className={cn(
-        "fixed inset-x-0 top-0 z-50 transition-all duration-500",
-        scrolled || open
-          ? "bg-background/85 backdrop-blur-xl border-b border-border/60 shadow-soft"
-          : "bg-transparent"
+        "sticky top-0 z-50 w-full bg-background/95 backdrop-blur-xl transition-shadow duration-300",
+        scrolled || open ? "shadow-soft border-b border-border/70" : "border-b border-border/40"
       )}
     >
       <nav className="container-wide flex h-20 items-center justify-between gap-6">
-        <Logo className={cn("transition-all", scrolled ? "h-8" : "h-10")} />
+        <Logo variant="primary" className={cn("transition-all", scrolled ? "h-9" : "h-11")} />
 
         <ul className="hidden lg:flex items-center gap-1">
           {links.map((l) => (
