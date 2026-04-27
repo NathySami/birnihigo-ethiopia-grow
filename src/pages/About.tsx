@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Bird, Compass, HeartHandshake, Sparkles, Telescope, Users } from "lucide-react";
 import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
+import { Logo } from "@/components/site/Logo";
 import hoopoe from "@/assets/hoopoe.jpg";
 
 const timeline = [
@@ -34,8 +35,11 @@ export default function About() {
       <section className="bg-background py-24">
         <div className="container-wide grid gap-12 lg:grid-cols-12 lg:items-center">
           <Reveal>
-            <div className="lg:col-span-5">
+            <div className="lg:col-span-5 relative">
               <img src={hoopoe} alt="Hoopoe — Birnihigo in local language" className="w-full rounded-[2rem] object-cover shadow-elegant" loading="lazy" width={1280} height={960} />
+              <div className="absolute -bottom-8 -right-6 hidden md:flex h-32 w-32 items-center justify-center rounded-full bg-background shadow-elegant ring-1 ring-border">
+                <Logo variant="circular" asLink={false} className="h-24" />
+              </div>
             </div>
           </Reveal>
           <div className="lg:col-span-7">
