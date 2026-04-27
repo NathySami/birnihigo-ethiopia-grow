@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Briefcase, ClipboardList, Cog, Microscope, Wrench } from "lucide-react";
 import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
+import farmFeeders from "@/assets/farm-feeders-rows.jpg";
 
 const areas = [
   { icon: Wrench, t: "Production", d: "Hatchery, broiler, processing line operators and supervisors." },
@@ -20,6 +21,8 @@ export default function Careers() {
         eyebrow="Careers"
         title="Let's work with purpose."
         subtitle="Join a company committed to transforming agriculture, building national capacity, and developing future industry leaders."
+        image={farmFeeders}
+        imageAlt="Operators-eye view of a Birnihigo grow-out house with rows of automated feeders"
       />
 
       <section className="bg-background py-24">
