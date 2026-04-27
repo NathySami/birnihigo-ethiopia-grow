@@ -2,56 +2,77 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Birnihigo Integrated Farms — Brand Design System
+   Primary: Café Noir #4F3C1C  (HSL 38 48% 32%)
+   Secondary: Deep Saffron #FEA42A (HSL 35 99% 58%)
+   Accents: White Chocolate #EFE7DC (35 38% 90%), Dandelion #FFD275 (40 100% 73%), Chinese Bronze #CD8C24 (38 70% 47%)
+   Typeface: Parkinsans (display + body)
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300;400;500;600;700;800&display=swap');
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Surfaces */
+    --background: 35 40% 97%;          /* warm cream */
+    --foreground: 38 48% 15%;          /* deepest cafe noir */
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 38 48% 18%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 38 48% 18%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Brand */
+    --primary: 38 48% 32%;             /* Café Noir #4F3C1C */
+    --primary-foreground: 35 40% 97%;
+    --primary-deep: 38 55% 20%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 35 99% 58%;           /* Deep Saffron #FEA42A */
+    --secondary-foreground: 38 55% 18%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 40 100% 73%;             /* Dandelion */
+    --accent-foreground: 38 55% 18%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --bronze: 38 70% 47%;              /* Chinese Bronze */
+    --cream: 35 38% 90%;               /* White Chocolate */
+    --cream-deep: 35 30% 84%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --muted: 35 30% 92%;
+    --muted-foreground: 38 20% 38%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 35 40% 97%;
 
-    --radius: 0.5rem;
+    --border: 35 25% 86%;
+    --input: 35 25% 86%;
+    --ring: 35 99% 58%;
+
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(38 55% 20% / 0.92) 0%, hsl(38 48% 32% / 0.78) 50%, hsl(35 99% 58% / 0.35) 100%);
+    --gradient-saffron: linear-gradient(135deg, hsl(35 99% 58%) 0%, hsl(40 100% 73%) 100%);
+    --gradient-cafe: linear-gradient(135deg, hsl(38 55% 20%) 0%, hsl(38 48% 32%) 100%);
+    --gradient-cream: linear-gradient(180deg, hsl(35 40% 97%) 0%, hsl(35 38% 90%) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(38 48% 18% / 0.12);
+    --shadow-elegant: 0 20px 60px -20px hsl(38 55% 20% / 0.35);
+    --shadow-saffron: 0 12px 40px -12px hsl(35 99% 58% / 0.55);
+    --shadow-card: 0 1px 3px hsl(38 48% 18% / 0.06), 0 8px 24px -8px hsl(38 48% 18% / 0.08);
+
+    /* Motion */
+    --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+    --transition-base: 300ms var(--ease-out-expo);
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -100,6 +121,59 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Parkinsans', system-ui, -apple-system, sans-serif;
+    font-feature-settings: "ss01", "cv11";
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Parkinsans', system-ui, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  ::selection {
+    background: hsl(var(--secondary));
+    color: hsl(var(--secondary-foreground));
+  }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+  .text-pretty { text-wrap: pretty; }
+
+  .bg-gradient-hero { background-image: var(--gradient-hero); }
+  .bg-gradient-saffron { background-image: var(--gradient-saffron); }
+  .bg-gradient-cafe { background-image: var(--gradient-cafe); }
+  .bg-gradient-cream { background-image: var(--gradient-cream); }
+
+  .shadow-soft { box-shadow: var(--shadow-soft); }
+  .shadow-elegant { box-shadow: var(--shadow-elegant); }
+  .shadow-saffron { box-shadow: var(--shadow-saffron); }
+  .shadow-card { box-shadow: var(--shadow-card); }
+
+  .grain {
+    position: relative;
+  }
+  .grain::after {
+    content: "";
+    position: absolute; inset: 0;
+    background-image: radial-gradient(hsl(38 55% 20% / 0.06) 1px, transparent 1px);
+    background-size: 3px 3px;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+  }
+
+  .container-tight { @apply mx-auto max-w-6xl px-6; }
+  .container-wide { @apply mx-auto max-w-7xl px-6; }
+}
+
+@layer components {
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-secondary;
+  }
+  .eyebrow::before {
+    content: "";
+    @apply inline-block h-px w-8 bg-secondary;
   }
 }
