@@ -13,6 +13,7 @@ import farmGrow from "@/assets/farm-grow-out.jpg";
 import farmFeeders from "@/assets/farm-feeders-rows.jpg";
 import { Reveal } from "@/components/site/Reveal";
 import { Logo } from "@/components/site/Logo";
+import { ValueChainFlow } from "@/components/site/ValueChainFlow";
 
 const metrics = [
   { value: "48", suffix: "T/day", label: "Processing Capacity" },
@@ -189,6 +190,9 @@ const Index = () => {
           </Reveal>
         </div>
       </section>
+
+      {/* End-to-end highlighted flow */}
+      <ValueChainFlow variant="dark" />
 
       {/* NATIONAL IMPACT — split */}
       <section className="relative bg-background py-24 md:py-32">
