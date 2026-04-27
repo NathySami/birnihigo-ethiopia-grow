@@ -4,11 +4,11 @@ import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
 
 const stages = [
-  { icon: Egg, title: "Parent Stock", body: "Genetic foundation ensuring productivity and product quality across the chain." },
+  { icon: Egg, title: "Parent Stock Farm", body: "Our integrated value chain begins not at the hatchery but at the parent stock farm — securing the genetic foundation for productivity and product quality." },
   { icon: Sprout, title: "Hatchery", body: "Controlled incubation delivering high-quality, disease-free day-old chicks." },
-  { icon: Wheat, title: "Feed Mill", body: "6 ton/hour capacity producing optimized mash, crumble and pellet feed." },
+  { icon: Wheat, title: "Feed Mill & Crop Cultivation", body: "A fully integrated feed mill with 6 tons/hour capacity producing diverse animal feed — primarily high-quality poultry feed in mash, crumble and pellet forms — fed by 2,000+ hectares of maize and soybean cultivation." },
   { icon: Building2, title: "Broiler Production", body: "Company-owned farms plus a growing contract farming network." },
-  { icon: Factory, title: "Processing", body: "Halal-certified processing facility with 48 tons/day capacity." },
+  { icon: Factory, title: "Halal-Certified Processing", body: "HACCP-aligned, Halal-certified processing facility with 48 tons/day capacity." },
   { icon: Truck, title: "Cold Chain & Distribution", body: "End-to-end logistics ensuring product integrity from plant to market." },
 ];
 
