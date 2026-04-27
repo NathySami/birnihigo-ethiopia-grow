@@ -8,6 +8,7 @@ import sustain from "@/assets/sustainability.jpg";
 import farmer from "@/assets/farmer.jpg";
 import feedmill from "@/assets/feedmill.jpg";
 import { Reveal } from "@/components/site/Reveal";
+import { Logo } from "@/components/site/Logo";
 
 const metrics = [
   { value: "48", suffix: "T/day", label: "Processing Capacity" },
@@ -46,7 +47,7 @@ const Index = () => {
   return (
     <>
       {/* HERO */}
-      <section className="relative isolate min-h-[100svh] overflow-hidden">
+      <section className="relative isolate min-h-[calc(100svh-5rem)] overflow-hidden">
         <div className="absolute inset-0 -z-10">
           <img
             src={hero}
@@ -58,7 +59,7 @@ const Index = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-primary-deep via-primary-deep/30 to-transparent" />
         </div>
 
-        <div className="container-wide flex min-h-[100svh] flex-col justify-end pb-16 pt-40 md:pb-24">
+        <div className="container-wide flex min-h-[calc(100svh-5rem)] flex-col justify-end pb-16 pt-24 md:pb-24 md:pt-28">
           <motion.div
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
@@ -136,7 +137,12 @@ const Index = () => {
         <div className="container-wide">
           <div className="grid gap-10 md:grid-cols-12 md:items-end">
             <div className="md:col-span-7">
-              <Reveal><p className="eyebrow">Our Model</p></Reveal>
+              <Reveal>
+                <div className="flex items-center gap-4">
+                  <Logo variant="icon-saffron" asLink={false} className="h-12 rounded-xl shadow-soft" />
+                  <p className="eyebrow">Our Model</p>
+                </div>
+              </Reveal>
               <Reveal delay={0.05}>
                 <h2 className="mt-5 text-3xl font-bold tracking-tight text-primary md:text-5xl text-balance">
                   An integrated poultry value chain — <span className="text-secondary">from farm to fork.</span>
