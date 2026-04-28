@@ -6,7 +6,7 @@ import { Reveal } from "@/components/site/Reveal";
 import { Logo } from "@/components/site/Logo";
 import { ValueChainFlow } from "@/components/site/ValueChainFlow";
 import hoopoe from "@/assets/hoopoe.jpg";
-import farmFeeding from "@/assets/farm-feeding.jpg";
+import farmFeeding from "@/assets/real-training-women.jpg";
 
 const timeline = [
   {
