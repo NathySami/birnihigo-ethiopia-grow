@@ -209,37 +209,36 @@ const Index = () => {
         </div>
       </section>
 
-      {/* CAPACITY — bold stat band */}
-      <section className="relative overflow-hidden bg-gradient-cafe py-24 text-primary-foreground md:py-32">
-        <div className="absolute inset-0 -z-10 opacity-25">
-          <img src={facility} alt="" className="h-full w-full object-cover" loading="lazy" width={1920} height={1080} />
-          <div className="absolute inset-0 bg-gradient-cafe opacity-80" />
-        </div>
+      {/* THE NUMBERS — Industrial Scale */}
+      <section className="border-y border-bronze/10 bg-cream py-24">
         <div className="container-wide">
-          <Reveal>
-            <p className="eyebrow !text-secondary">Capacity & Scale</p>
-          </Reveal>
-          <Reveal delay={0.05}>
-            <h2 className="mt-5 max-w-3xl text-3xl font-bold tracking-tight md:text-5xl text-balance">
-              Industrial production designed for impact.
+          <Reveal className="mb-16 text-center">
+            <p className="mb-4 text-xs font-black uppercase tracking-[0.4em] text-bronze">
+              Industrial Scale
+            </p>
+            <h2 className="text-4xl font-black italic tracking-tighter text-primary md:text-5xl">
+              The Numbers That Define Us
             </h2>
           </Reveal>
 
-          <div className="mt-16 grid gap-10 md:grid-cols-4">
-            {[
-              { k: "48", l: "tons / day", s: "Processing capacity" },
-              { k: "6", l: "tons / hour", s: "Feed mill output" },
-              { k: "42+", l: "hectares", s: "Operational land" },
-              { k: "2,000+", l: "hectares", s: "Expansion pipeline" },
-            ].map((s, i) => (
-              <Reveal key={s.s} delay={i * 0.07}>
-                <div className="border-l-2 border-secondary/60 pl-5">
-                  <p className="text-5xl font-bold tracking-tight text-secondary md:text-6xl">{s.k}</p>
-                  <p className="mt-1 text-sm font-medium uppercase tracking-widest text-primary-foreground/65">{s.l}</p>
-                  <p className="mt-3 text-base text-primary-foreground/85">{s.s}</p>
-                </div>
-              </Reveal>
-            ))}
+          <div className="mx-auto max-w-6xl">
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+              {[
+                { k: "48", l: "tons / day", s: "Processing capacity" },
+                { k: "6", l: "tons / hour", s: "Feed mill output" },
+                { k: "42+", l: "hectares", s: "Operational land" },
+                { k: "2,000+", l: "hectares", s: "Expansion pipeline" },
+              ].map((s, i) => (
+                <Reveal key={s.s} delay={i * 0.07}>
+                  <div className="group relative h-full overflow-hidden rounded-2xl border border-bronze/15 bg-card p-7 shadow-card transition-all duration-500 hover:-translate-y-1 hover:border-secondary/40 hover:shadow-elegant">
+                    <span className="absolute right-4 top-4 text-xs font-bold text-bronze/40">0{i + 1}</span>
+                    <p className="text-5xl font-black tracking-tighter text-primary md:text-6xl">{s.k}</p>
+                    <p className="mt-2 text-xs font-bold uppercase tracking-[0.2em] text-secondary">{s.l}</p>
+                    <p className="mt-4 text-sm leading-relaxed text-foreground/70">{s.s}</p>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
           </div>
         </div>
       </section>
