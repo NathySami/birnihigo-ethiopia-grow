@@ -51,7 +51,7 @@ export default function Contact() {
                 <p className="mt-3 text-foreground/70">Kazanchis Garad Building, in front of ECA, 10th floor, Room 02.</p>
                 <div className="mt-4 space-y-2 text-sm text-foreground/65">
                   <p className="flex items-center gap-2"><Mail className="h-4 w-4 text-secondary" /> info@birnihigo.com</p>
-                  <p className="flex items-center gap-2"><Phone className="h-4 w-4 text-secondary" /> +251 11 000 0000</p>
+                  <p className="flex items-center gap-2"><Phone className="h-4 w-4 text-secondary" /> +251 911 20 94 05</p>
                 </div>
               </div>
             </Reveal>
