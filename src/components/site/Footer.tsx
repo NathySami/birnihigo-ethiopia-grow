@@ -23,7 +23,7 @@ export const Footer = () => (
     <div className="container-wide py-20">
       <div className="grid gap-14 lg:grid-cols-12">
         <div className="lg:col-span-5 space-y-6">
-          <Logo variant="wordmark-light" className="h-12" />
+          <Logo variant="circular-light" className="h-20" />
           <p className="text-base text-primary-foreground/75 max-w-md leading-relaxed">
             Building Ethiopia's first fully integrated poultry system to deliver affordable, safe, and scalable protein at national scale.
           </p>

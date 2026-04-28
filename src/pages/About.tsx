@@ -120,7 +120,7 @@ export default function About() {
             <div className="lg:col-span-5 relative">
               <img src={hoopoe} alt="Hoopoe — Birnihigo in local language" className="w-full rounded-[2rem] object-cover shadow-elegant" loading="lazy" width={1280} height={960} />
               <div className="absolute -bottom-8 -right-6 hidden md:flex h-32 w-32 items-center justify-center rounded-full bg-background shadow-elegant ring-1 ring-border">
-                <Logo variant="circular" asLink={false} className="h-24" />
+                <Logo variant="circular-mono" asLink={false} className="h-24" />
               </div>
             </div>
           </Reveal>

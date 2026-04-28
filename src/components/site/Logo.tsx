@@ -3,16 +3,28 @@ import primary from "@/assets/logo-primary.png";
 import wordmark from "@/assets/logo-wordmark.png";
 import wordmarkLight from "@/assets/logo-wordmark-light.png";
 import circular from "@/assets/logo-circular.png";
+import circularMono from "@/assets/logo-circular-mono.png";
+import circularLight from "@/assets/logo-circular-light.png";
 import iconSaffron from "@/assets/logo-icon-saffron.png";
 import iconCafe from "@/assets/logo-icon-cafe.png";
 
-export type LogoVariant = "primary" | "wordmark" | "wordmark-light" | "circular" | "icon-saffron" | "icon-cafe";
+export type LogoVariant =
+  | "primary"
+  | "wordmark"
+  | "wordmark-light"
+  | "circular"
+  | "circular-mono"
+  | "circular-light"
+  | "icon-saffron"
+  | "icon-cafe";
 
 const sources: Record<LogoVariant, string> = {
   primary,
   wordmark,
   "wordmark-light": wordmarkLight,
   circular,
+  "circular-mono": circularMono,
+  "circular-light": circularLight,
   "icon-saffron": iconSaffron,
   "icon-cafe": iconCafe,
 };
