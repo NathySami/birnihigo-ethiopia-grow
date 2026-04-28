@@ -14,6 +14,7 @@ import farmFeeders from "@/assets/real-broiler-house-silo.jpg";
 import { Reveal } from "@/components/site/Reveal";
 import { Logo } from "@/components/site/Logo";
 import { ValueChainFlow } from "@/components/site/ValueChainFlow";
+import ScrollytellingHero from "@/components/site/ScrollytellingHero";
 
 const metrics = [
   { value: "48", suffix: "Tons/day", label: "Processing Capacity" },
@@ -47,61 +48,17 @@ const Index = () => {
     document.head.appendChild(meta);
   }, []);
 
-  const reduce = useReducedMotion();
-
   return (
     <>
-      {/* HERO */}
-      <section className="relative isolate min-h-[calc(100svh-6rem)] overflow-hidden">
-        <div className="absolute inset-0 -z-10">
-          <img
-            src={hero}
-            alt="Inside a Birnihigo broiler house — thousands of healthy birds in a bio-secured, climate-controlled environment"
-            className={`h-full w-full object-cover ${reduce ? "" : "animate-slow-zoom"}`}
-            width={1920} height={1280}
-          />
-          {/* Brand-tinted veil — café noir + saffron warmth (no gray) */}
-          <div className="absolute inset-0 bg-gradient-to-br from-primary-deep/70 via-primary/40 to-secondary/25" />
-          <div className="absolute inset-0 bg-gradient-to-t from-primary-deep/85 via-primary-deep/30 to-transparent" />
-        </div>
+      {/* HERO — scrollytelling */}
+      <ScrollytellingHero />
 
-        <div className="container-wide flex min-h-[calc(100svh-6rem)] flex-col items-center justify-center pb-16 pt-12 md:pb-24 md:pt-16">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-            className="relative w-full max-w-5xl rounded-[2rem] border border-primary-foreground/15 bg-primary-deep/35 px-6 py-12 text-center shadow-elegant backdrop-blur-md md:px-12 md:py-16"
-          >
-            <p className="text-xs font-bold uppercase tracking-[0.4em] text-secondary md:text-sm">
-              Birnihigo Integrated Farms
-            </p>
-            <h1 className="mt-8 text-4xl font-extrabold uppercase leading-[1.05] tracking-tight text-primary-foreground sm:text-5xl md:text-6xl lg:text-[4.25rem] text-balance">
-              BUILDING ETHIOPIA'S FIRST<br />
-              <span className="text-secondary">FULLY INTEGRATED POULTRY SYSTEM</span><br />
-              AT SCALE
-            </h1>
-            <p className="mx-auto mt-8 max-w-3xl text-base leading-relaxed text-primary-foreground/85 md:text-lg text-pretty">
-              Birnihigo Integrated Farms is a vertically integrated agribusiness platform designed to solve Ethiopia's poultry system inefficiencies through industrial-scale production, biosecurity excellence, and market integration.
-            </p>
-            <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-              <Link to="/investors" className="group inline-flex items-center gap-2 rounded-full bg-gradient-saffron px-8 py-4 text-base font-bold text-secondary-foreground shadow-saffron transition-all hover:scale-[1.03] hover:shadow-elegant">
-                Explore Investment Opportunity
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </Link>
-              <Link to="/contact" className="group inline-flex items-center gap-2 rounded-full border border-secondary/60 bg-primary-deep/40 px-8 py-4 text-base font-bold text-primary-foreground backdrop-blur-md transition-all hover:bg-secondary hover:text-secondary-foreground hover:border-secondary">
-                Partner With Us
-                <ArrowUpRight className="h-4 w-4 transition-transform group-hover:rotate-45" />
-              </Link>
-            </div>
-          </motion.div>
-
-          {/* metrics */}
-          <motion.div
-            initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="mt-10 grid w-full max-w-5xl grid-cols-2 gap-px overflow-hidden rounded-2xl border border-primary-foreground/15 bg-primary-foreground/10 backdrop-blur-xl md:grid-cols-4"
-          >
+      {/* METRICS BAND */}
+      <section className="bg-primary-deep py-16">
+        <div className="container-wide">
+          <div className="grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-primary-foreground/15 bg-primary-foreground/10 md:grid-cols-4">
             {metrics.map((m, i) => (
-              <div key={i} className="bg-primary-deep/50 p-6 md:p-7">
+              <div key={i} className="bg-primary-deep/80 p-6 md:p-7">
                 <div className="flex items-baseline gap-1.5">
                   <span className="text-3xl font-bold text-secondary md:text-4xl">{m.value}</span>
                   <span className="text-sm font-medium text-primary-foreground/70">{m.suffix}</span>
@@ -109,7 +66,7 @@ const Index = () => {
                 <p className="mt-2 text-sm text-primary-foreground/75">{m.label}</p>
               </div>
             ))}
-          </motion.div>
+          </div>
         </div>
       </section>
 
