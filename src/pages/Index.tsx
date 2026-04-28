@@ -16,10 +16,10 @@ import { Logo } from "@/components/site/Logo";
 import { ValueChainFlow } from "@/components/site/ValueChainFlow";
 
 const metrics = [
-  { value: "48", suffix: "T/day", label: "Processing Capacity" },
+  { value: "48", suffix: "Tons/day", label: "Processing Capacity" },
   { value: "42+", suffix: "Hectares", label: "Bio-secured Operations" },
-  { value: "6", suffix: "T/hour", label: "Feed Mill Capacity" },
-  { value: "100%", suffix: "Halal", label: "Export-Ready Plant" },
+  { value: "6", suffix: "Ton/hour", label: "Feed Mill" },
+  { value: "Halal", suffix: "Export-Ready", label: "Infrastructure" },
 ];
 
 const valueChain = [
@@ -74,21 +74,21 @@ const Index = () => {
             <p className="text-xs font-bold uppercase tracking-[0.4em] text-secondary md:text-sm">
               Birnihigo Integrated Farms
             </p>
-            <h1 className="mt-8 text-5xl font-extrabold uppercase leading-[0.95] tracking-tight text-primary-foreground sm:text-6xl md:text-7xl lg:text-[5.5rem] text-balance">
-              Pioneering East<br />
-              Africa's<br />
-              <span className="text-secondary">Food Security</span>
+            <h1 className="mt-8 text-4xl font-extrabold uppercase leading-[1.05] tracking-tight text-primary-foreground sm:text-5xl md:text-6xl lg:text-[4.25rem] text-balance">
+              Building Ethiopia's First<br />
+              <span className="text-secondary">Fully Integrated Poultry System</span><br />
+              to Deliver Affordable Protein at National Scale
             </h1>
-            <p className="mx-auto mt-8 max-w-2xl text-base leading-relaxed text-primary-foreground/85 md:text-lg text-pretty">
-              42 hectares of vertically integrated poultry excellence — from hatchery to halal-certified processing.
+            <p className="mx-auto mt-8 max-w-3xl text-base leading-relaxed text-primary-foreground/85 md:text-lg text-pretty">
+              Birnihigo Integrated Farms is a vertically integrated agribusiness platform designed to solve Ethiopia's poultry system inefficiencies through industrial-scale production, biosecurity excellence, and market integration.
             </p>
             <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-              <Link to="/about" className="group inline-flex items-center gap-2 rounded-full bg-gradient-saffron px-8 py-4 text-base font-bold text-secondary-foreground shadow-saffron transition-all hover:scale-[1.03] hover:shadow-elegant">
-                Our Story
+              <Link to="/investors" className="group inline-flex items-center gap-2 rounded-full bg-gradient-saffron px-8 py-4 text-base font-bold text-secondary-foreground shadow-saffron transition-all hover:scale-[1.03] hover:shadow-elegant">
+                Explore Investment Opportunity
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
-              <Link to="/investors" className="group inline-flex items-center gap-2 rounded-full border border-secondary/60 bg-primary-deep/40 px-8 py-4 text-base font-bold text-primary-foreground backdrop-blur-md transition-all hover:bg-secondary hover:text-secondary-foreground hover:border-secondary">
-                Investor Relations
+              <Link to="/contact" className="group inline-flex items-center gap-2 rounded-full border border-secondary/60 bg-primary-deep/40 px-8 py-4 text-base font-bold text-primary-foreground backdrop-blur-md transition-all hover:bg-secondary hover:text-secondary-foreground hover:border-secondary">
+                Partner With Us
                 <ArrowUpRight className="h-4 w-4 transition-transform group-hover:rotate-45" />
               </Link>
             </div>
