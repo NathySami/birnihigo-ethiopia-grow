@@ -45,6 +45,11 @@ export default {
           DEFAULT: "hsl(var(--cream))",
           deep: "hsl(var(--cream-deep))",
         },
+        ink: {
+          DEFAULT: "hsl(var(--ink))",
+          soft: "hsl(var(--ink-soft))",
+          foreground: "hsl(var(--ink-foreground))",
+        },
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
