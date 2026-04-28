@@ -3,7 +3,7 @@ import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
 import meat from "@/assets/chicken-meat.jpg";
 import chicks from "@/assets/farm-young-flock.jpg";
-import feed from "@/assets/feedmill.jpg";
+import feed from "@/assets/real-feedmill-exterior.jpg";
 import sustain from "@/assets/sustainability.jpg";
 
 const products = [

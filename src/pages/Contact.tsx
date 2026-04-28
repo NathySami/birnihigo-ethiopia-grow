@@ -33,20 +33,25 @@ export default function Contact() {
           <div className="lg:col-span-5 space-y-6">
             <Reveal>
               <div className="rounded-2xl border border-border bg-card p-7 shadow-card">
-                <div className="flex items-center gap-3 text-secondary"><Building2 className="h-5 w-5" /><span className="text-xs font-semibold uppercase tracking-widest">Operations Site</span></div>
-                <h3 className="mt-3 text-xl font-bold text-primary">Awash Sebat, Afar Region</h3>
-                <p className="mt-2 text-foreground/70">Awash, Ethiopia — production, hatchery, feed mill, and processing operations.</p>
-                <div className="mt-4 flex items-center gap-2 text-sm text-foreground/65"><MapPin className="h-4 w-4 text-secondary" /> Afar Regional State, Ethiopia</div>
+                <div className="flex items-center gap-3 text-secondary"><Building2 className="h-5 w-5" /><span className="text-xs font-semibold uppercase tracking-widest">Operations & Production Site</span></div>
+                <h3 className="mt-3 text-xl font-bold text-primary">Awash Sebat, Afar Region, Ethiopia</h3>
+                <p className="mt-1 text-sm font-semibold text-bronze">Primary Production & Processing Hub</p>
+                <p className="mt-3 text-foreground/70">Hatchery, broiler farms, feed mill, and Halal-certified processing operations.</p>
+                <div className="mt-4 space-y-2 text-sm text-foreground/65">
+                  <p className="flex items-center gap-2"><MapPin className="h-4 w-4 text-secondary" /> Afar Regional State, Ethiopia</p>
+                  <p className="flex items-center gap-2"><Phone className="h-4 w-4 text-secondary" /> +251 22 241 3101</p>
+                </div>
               </div>
             </Reveal>
             <Reveal delay={0.07}>
               <div className="rounded-2xl border border-border bg-card p-7 shadow-card">
-                <div className="flex items-center gap-3 text-secondary"><Building2 className="h-5 w-5" /><span className="text-xs font-semibold uppercase tracking-widest">Corporate Liaison</span></div>
-                <h3 className="mt-3 text-xl font-bold text-primary">Addis Ababa Office</h3>
-                <p className="mt-2 text-foreground/70">Kazanchis Garad Building, in front of ECA, 10th floor, Room 02 — administrative coordination, stakeholder engagement & partnerships.</p>
+                <div className="flex items-center gap-3 text-secondary"><Building2 className="h-5 w-5" /><span className="text-xs font-semibold uppercase tracking-widest">Corporate Liaison Office</span></div>
+                <h3 className="mt-3 text-xl font-bold text-primary">Addis Ababa, Ethiopia</h3>
+                <p className="mt-1 text-sm font-semibold text-bronze">Administrative Coordination, Stakeholder Engagement & Partnerships</p>
+                <p className="mt-3 text-foreground/70">Kazanchis Garad Building, in front of ECA, 10th floor, Room 02.</p>
                 <div className="mt-4 space-y-2 text-sm text-foreground/65">
                   <p className="flex items-center gap-2"><Mail className="h-4 w-4 text-secondary" /> info@birnihigo.com</p>
-                  <p className="flex items-center gap-2"><Phone className="h-4 w-4 text-secondary" /> +251 11 000 0000</p>
+                  <p className="flex items-center gap-2"><Phone className="h-4 w-4 text-secondary" /> +251 911 20 94 05</p>
                 </div>
               </div>
             </Reveal>

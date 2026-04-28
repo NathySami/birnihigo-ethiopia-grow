@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Briefcase, ClipboardList, Cog, Microscope, Wrench } from "lucide-react";
 import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
-import farmFeeders from "@/assets/farm-feeders-rows.jpg";
+import farmFeeders from "@/assets/real-training-classroom.jpg";
 
 const areas = [
   { icon: Wrench, t: "Production", d: "Hatchery, broiler, processing line operators and supervisors." },

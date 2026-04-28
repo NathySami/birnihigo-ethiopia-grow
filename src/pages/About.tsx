@@ -1,11 +1,12 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Bird, Compass, HeartHandshake, Sparkles, Telescope, Users, CheckCircle2, ShieldCheck, Globe2, Sprout, Factory, Handshake } from "lucide-react";
+import { ArrowRight, Bird, Compass, HeartHandshake, Sparkles, Telescope, Users, CheckCircle2, ShieldCheck, Globe2, Sprout, Factory, Handshake, GraduationCap, FlaskConical } from "lucide-react";
 import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
 import { Logo } from "@/components/site/Logo";
+import { ValueChainFlow } from "@/components/site/ValueChainFlow";
 import hoopoe from "@/assets/hoopoe.jpg";
-import farmFeeding from "@/assets/farm-feeding.jpg";
+import farmFeeding from "@/assets/real-training-women.jpg";
 
 const timeline = [
   {
@@ -55,6 +56,7 @@ const commitments = [
   { icon: Globe2, text: "Advancing toward Halal-certified, export-ready production." },
   { icon: Factory, text: "Setting new standards through vertically integrated excellence." },
   { icon: ShieldCheck, text: "Upholding uncompromised, science-based biosecurity across all operations." },
+  { icon: GraduationCap, text: "Building industry talent through poultry research and academic partnerships." },
 ];
 
 const milestones = [
@@ -118,7 +120,7 @@ export default function About() {
             <div className="lg:col-span-5 relative">
               <img src={hoopoe} alt="Hoopoe — Birnihigo in local language" className="w-full rounded-[2rem] object-cover shadow-elegant" loading="lazy" width={1280} height={960} />
               <div className="absolute -bottom-8 -right-6 hidden md:flex h-32 w-32 items-center justify-center rounded-full bg-background shadow-elegant ring-1 ring-border">
-                <Logo variant="circular" asLink={false} className="h-24" />
+                <Logo variant="circular-mono" asLink={false} className="h-24" />
               </div>
             </div>
           </Reveal>
@@ -180,21 +182,37 @@ export default function About() {
           <Reveal>
             <div className="h-full rounded-[2rem] bg-gradient-cafe p-10 text-primary-foreground shadow-elegant">
               <p className="eyebrow !text-secondary">Our Vision</p>
-              <p className="mt-6 text-2xl font-bold leading-snug md:text-3xl text-balance">
-                To emerge as the top poultry company in the industry — boosting national per capita consumption, building regional export capacity, and developing our own GP farm within 5 to 7 years.
+              <p className="mt-6 text-xl font-bold leading-snug md:text-2xl text-balance">
+                To nourish nations through safe, affordable poultry protein by building a system defined by innovation, integration, and{" "}
+                <span className="text-secondary">Biosecurity Excellence</span> — recognized not as an operational necessity, but as a strategic pillar ensuring long-term sustainability and trust.
               </p>
+              <div className="mt-8 flex items-start gap-3 rounded-xl border border-secondary/30 bg-primary-foreground/5 p-4">
+                <ShieldCheck className="mt-0.5 h-5 w-5 shrink-0 text-secondary" />
+                <p className="text-sm leading-relaxed text-primary-foreground/85">
+                  <strong className="text-secondary">Biosecurity Excellence</strong> is not just an operational requirement, but a strategic pillar in modern poultry production — embedded as a system-level discipline across every stage of our value chain.
+                </p>
+              </div>
             </div>
           </Reveal>
           <Reveal delay={0.1}>
             <div className="h-full rounded-[2rem] bg-background p-10 shadow-card border border-border">
               <p className="eyebrow">Our Mission</p>
-              <p className="mt-6 text-2xl font-bold leading-snug text-primary md:text-3xl text-balance">
-                "To nourish humanity with transparency and integrity by implementing a fully integrated poultry value chain that delivers nutritious chicken meat at a truly affordable price."
+              <p className="mt-6 text-xl font-bold leading-snug text-primary md:text-2xl text-balance">
+                "Driving national food sovereignty through integrated, science-based poultry systems that transform production into a reliable source of safe, affordable protein at scale."
               </p>
+              <div className="mt-8 flex items-start gap-3 rounded-xl border border-border bg-cream p-4">
+                <FlaskConical className="mt-0.5 h-5 w-5 shrink-0 text-bronze" />
+                <p className="text-sm leading-relaxed text-foreground/75">
+                  <strong className="text-primary">Building industry talent</strong> through poultry research and academic partnerships — investing in the next generation of scientists, technicians, and farm leaders that will scale Ethiopia's protein economy.
+                </p>
+              </div>
             </div>
           </Reveal>
         </div>
       </section>
+
+      {/* Integrated value chain visualization */}
+      <ValueChainFlow />
 
       {/* Journey — visual timeline */}
       <section className="bg-background py-24">

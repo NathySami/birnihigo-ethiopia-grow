@@ -1,24 +1,25 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { motion, useReducedMotion } from "framer-motion";
 import { ArrowRight, ArrowUpRight, Building2, Egg, Factory, Leaf, Recycle, ShieldCheck, Sprout, Truck, Wheat } from "lucide-react";
-import hero from "@/assets/farm-broiler-house.jpg";
+import hero from "@/assets/real-broiler-house-interior.jpg";
 import broilers from "@/assets/farm-broilers-detail.jpg";
 import sustain from "@/assets/sustainability.jpg";
 import farmer from "@/assets/farmer.jpg";
-import feedmill from "@/assets/feedmill.jpg";
+import feedmill from "@/assets/real-feedmill-exterior.jpg";
 import facility from "@/assets/facility-exterior.jpg";
-import farmYoung from "@/assets/farm-young-flock.jpg";
+import farmYoung from "@/assets/real-brooding-chicks.jpg";
 import farmGrow from "@/assets/farm-grow-out.jpg";
-import farmFeeders from "@/assets/farm-feeders-rows.jpg";
+import farmFeeders from "@/assets/real-broiler-house-silo.jpg";
 import { Reveal } from "@/components/site/Reveal";
 import { Logo } from "@/components/site/Logo";
+import { ValueChainFlow } from "@/components/site/ValueChainFlow";
+import ScrollytellingHero from "@/components/site/ScrollytellingHero";
 
 const metrics = [
-  { value: "48", suffix: "T/day", label: "Processing Capacity" },
+  { value: "48", suffix: "Tons/day", label: "Processing Capacity" },
   { value: "42+", suffix: "Hectares", label: "Bio-secured Operations" },
-  { value: "6", suffix: "T/hour", label: "Feed Mill Capacity" },
-  { value: "100%", suffix: "Halal", label: "Export-Ready Plant" },
+  { value: "6", suffix: "Ton/hour", label: "Feed Mill" },
+  { value: "Halal", suffix: "Export-Ready", label: "Infrastructure" },
 ];
 
 const valueChain = [
@@ -46,60 +47,36 @@ const Index = () => {
     document.head.appendChild(meta);
   }, []);
 
-  const reduce = useReducedMotion();
-
   return (
     <>
-      {/* HERO */}
-      <section className="relative isolate min-h-[calc(100svh-5rem)] overflow-hidden">
-        <div className="absolute inset-0 -z-10">
-          <img
-            src={hero}
-            alt="Inside a Birnihigo broiler house — thousands of healthy birds in a bio-secured, climate-controlled environment"
-            className={`h-full w-full object-cover ${reduce ? "" : "animate-slow-zoom"}`}
-            width={1920} height={1280}
-          />
-          <div className="absolute inset-0 bg-gradient-hero" />
-          <div className="absolute inset-0 bg-gradient-to-t from-primary-deep via-primary-deep/30 to-transparent" />
-        </div>
+      {/* HERO — scrollytelling */}
+      <ScrollytellingHero />
 
-        <div className="container-wide flex min-h-[calc(100svh-5rem)] flex-col justify-end pb-16 pt-24 md:pb-24 md:pt-28">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-            className="max-w-4xl"
-          >
-            <span className="inline-flex items-center gap-2 rounded-full border border-secondary/40 bg-primary-deep/40 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-secondary backdrop-blur-md">
-              <span className="h-1.5 w-1.5 rounded-full bg-secondary animate-pulse" />
-              Ethiopia · National Scale Agricultural Platform
-            </span>
-            <h1 className="mt-6 text-4xl font-bold leading-[1.04] tracking-tight text-primary-foreground sm:text-5xl md:text-6xl lg:text-7xl text-balance">
-              Building Ethiopia's First<br />
-              <span className="text-secondary">Fully Integrated</span> Poultry System
-            </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-primary-foreground/85 md:text-xl text-pretty">
-              A vertically integrated agribusiness platform designed to solve Ethiopia's poultry system inefficiencies through industrial-scale production, biosecurity excellence, and market integration.
+      {/* MISSION QUOTE BAND */}
+      <section className="bg-gradient-cafe py-20 md:py-28 text-primary-foreground">
+        <div className="container-wide grid gap-10 md:grid-cols-12 md:items-center">
+          <Reveal className="md:col-span-8">
+            <p className="text-2xl font-extrabold uppercase italic leading-[1.15] tracking-tight md:text-4xl lg:text-[2.75rem] text-balance">
+              "Driving national food sovereignty through integrated, science-based poultry systems."
             </p>
-            <div className="mt-10 flex flex-wrap items-center gap-4">
-              <Link to="/investors" className="group inline-flex items-center gap-2 rounded-full bg-secondary px-7 py-4 text-base font-semibold text-secondary-foreground shadow-saffron transition-all hover:scale-[1.03] hover:shadow-elegant">
-                Explore Investment Opportunity
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </Link>
-              <Link to="/contact" className="group inline-flex items-center gap-2 rounded-full border border-primary-foreground/30 bg-primary-foreground/5 px-7 py-4 text-base font-semibold text-primary-foreground backdrop-blur-md transition-all hover:bg-primary-foreground hover:text-primary">
-                Partner With Us
-                <ArrowUpRight className="h-4 w-4 transition-transform group-hover:rotate-45" />
-              </Link>
+          </Reveal>
+          <Reveal delay={0.1} className="md:col-span-4">
+            <div className="flex items-start gap-5">
+              <span className="mt-2 hidden h-px w-14 shrink-0 bg-secondary md:block" />
+              <p className="text-xs font-bold uppercase leading-relaxed tracking-[0.25em] text-secondary md:text-sm">
+                Transforming production into a reliable source of safe, affordable protein for 135M+ citizens.
+              </p>
             </div>
-          </motion.div>
+          </Reveal>
+        </div>
+      </section>
 
-          {/* metrics */}
-          <motion.div
-            initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="mt-16 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-primary-foreground/15 bg-primary-foreground/10 backdrop-blur-xl md:grid-cols-4"
-          >
+      {/* METRICS BAND */}
+      <section className="bg-primary-deep py-16">
+        <div className="container-wide">
+          <div className="grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-primary-foreground/15 bg-primary-foreground/10 md:grid-cols-4">
             {metrics.map((m, i) => (
-              <div key={i} className="bg-primary-deep/50 p-6 md:p-7">
+              <div key={i} className="bg-primary-deep/80 p-6 md:p-7">
                 <div className="flex items-baseline gap-1.5">
                   <span className="text-3xl font-bold text-secondary md:text-4xl">{m.value}</span>
                   <span className="text-sm font-medium text-primary-foreground/70">{m.suffix}</span>
@@ -107,7 +84,7 @@ const Index = () => {
                 <p className="mt-2 text-sm text-primary-foreground/75">{m.label}</p>
               </div>
             ))}
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -149,12 +126,13 @@ const Index = () => {
               </Reveal>
               <Reveal delay={0.05}>
                 <h2 className="mt-5 text-3xl font-bold tracking-tight text-primary md:text-5xl text-balance">
+                  An integrated poultry value chain — <span className="text-secondary uppercase">fully integrated poultry value chain.</span>
                   An integrated poultry value chain — <span className="text-secondary">Fully Integreted Poultry Value Chain </span>
                 </h2>
               </Reveal>
             </div>
-            <Reveal delay={0.1}>
-              <p className="md:col-span-5 text-base text-foreground/70 leading-relaxed">
+            <Reveal delay={0.1} className="md:col-span-5">
+              <p className="text-base text-foreground/70 leading-relaxed">
                 Birnihigo operates a fully integrated system covering breeding, hatchery, feed, broiler farming, processing, cold chain and distribution — ensuring cost efficiency, quality control, and scalability.
               </p>
             </Reveal>
@@ -189,13 +167,16 @@ const Index = () => {
         </div>
       </section>
 
+      {/* End-to-end highlighted flow */}
+      <ValueChainFlow variant="dark" />
+
       {/* NATIONAL IMPACT — split */}
       <section className="relative bg-background py-24 md:py-32">
         <div className="container-wide grid gap-14 lg:grid-cols-2 lg:items-center">
           <Reveal>
             <div className="relative">
               <div className="absolute -inset-6 -z-10 rounded-[2rem] bg-gradient-saffron opacity-15 blur-2xl" />
-              <img src={farmer} alt="Ethiopian woman contract farmer holding a healthy chicken" className="rounded-[2rem] shadow-elegant w-full h-[520px] object-cover" loading="lazy" width={1280} height={960} />
+              <img src={farmer} alt="Birnihigo training session empowering women and youth through integrated outgrow farming" className="rounded-[2rem] shadow-elegant w-full h-[520px] object-cover" loading="lazy" width={1280} height={960} />
               <div className="absolute -bottom-6 -right-6 max-w-[260px] rounded-2xl border border-border bg-card p-5 shadow-elegant">
                 <p className="text-3xl font-bold text-primary">2,000+</p>
                 <p className="mt-1 text-sm text-foreground/65">Contract farmers in our growth pipeline — empowering youth and women.</p>
@@ -268,7 +249,7 @@ const Index = () => {
       <section className="relative bg-background py-24 md:py-32">
         <div className="container-wide">
           <div className="grid gap-10 md:grid-cols-12 md:items-end">
-            <div className="md:col-span-7">
+            <div className="md:col-span-8">
               <Reveal><p className="eyebrow">Inside the Farm</p></Reveal>
               <Reveal delay={0.05}>
                 <h2 className="mt-5 text-3xl font-bold tracking-tight text-primary md:text-5xl text-balance">
@@ -276,8 +257,8 @@ const Index = () => {
                 </h2>
               </Reveal>
             </div>
-            <Reveal delay={0.1}>
-              <p className="md:col-span-5 text-base leading-relaxed text-foreground/70">
+            <Reveal delay={0.1} className="md:col-span-4">
+              <p className="text-base leading-relaxed text-foreground/70 md:pb-2">
                 From parent stock houses and brooding rooms to grow-out barns and feed infrastructure — every stage runs under controlled, science-driven conditions.
               </p>
             </Reveal>
