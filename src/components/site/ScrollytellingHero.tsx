@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 import scrollEgg from "@/assets/real-farm-landscape.jpg";
 import scrollChick from "@/assets/real-broiler-house-silo.jpg";
 import scrollChicken from "@/assets/real-broiler-house-interior.jpg";
-import scrollProduct from "@/assets/real-feedmill-exterior.jpg";
+import scrollProduct from "@/assets/market-ready-delivery.jpg";
 
 const stages = [
   { src: scrollEgg, alt: "Birnihigo farm landscape in Afar, Ethiopia", label: "Foundation", caption: "Building from the ground up" },
   { src: scrollChick, alt: "Automated feed silos at Birnihigo poultry house", label: "Infrastructure", caption: "Modern facilities, precision care" },
   { src: scrollChicken, alt: "Chickens inside Birnihigo bio-secure broiler house", label: "Growing", caption: "Raised to the highest standards" },
-  { src: scrollProduct, alt: "Birnihigo feed mill and processing facility", label: "Market Ready", caption: "Delivered fresh to your table" },
+  { src: scrollProduct, alt: "Birnihigo delivering fresh poultry directly to community customers", label: "Market Ready", caption: "Delivered fresh to your table" },
 ];
 
 const ScrollytellingHero = () => {
