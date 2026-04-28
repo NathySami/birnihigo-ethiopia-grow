@@ -151,7 +151,7 @@ const Index = () => {
               </Reveal>
               <Reveal delay={0.05}>
                 <h2 className="mt-5 text-3xl font-bold tracking-tight text-primary md:text-5xl text-balance">
-                  An integrated poultry value chain — <span className="text-secondary">from farm to fork.</span>
+                  An integrated poultry value chain — <span className="text-secondary uppercase">fully integrated poultry value chain.</span>
                 </h2>
               </Reveal>
             </div>
