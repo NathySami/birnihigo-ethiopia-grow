@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { motion, useReducedMotion } from "framer-motion";
 import { ArrowRight, ArrowUpRight, Building2, Egg, Factory, Leaf, Recycle, ShieldCheck, Sprout, Truck, Wheat } from "lucide-react";
 import hero from "@/assets/real-broiler-house-interior.jpg";
 import broilers from "@/assets/farm-broilers-detail.jpg";
