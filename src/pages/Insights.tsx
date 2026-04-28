@@ -3,11 +3,11 @@ import { ArrowUpRight } from "lucide-react";
 import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
 import broilers from "@/assets/farm-broilers-detail.jpg";
-import farmer from "@/assets/farmer.jpg";
+import farmer from "@/assets/real-community-distribution.jpg";
 import sustain from "@/assets/sustainability.jpg";
 import feed from "@/assets/farm-broiler-house.jpg";
 import meat from "@/assets/chicken-meat.jpg";
-import facility from "@/assets/facility-exterior.jpg";
+import facility from "@/assets/real-feedmill-exterior.jpg";
 import grow from "@/assets/farm-grow-out.jpg";
 
 const posts = [
