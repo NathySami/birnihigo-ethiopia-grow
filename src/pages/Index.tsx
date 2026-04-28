@@ -200,7 +200,7 @@ const Index = () => {
           <Reveal>
             <div className="relative">
               <div className="absolute -inset-6 -z-10 rounded-[2rem] bg-gradient-saffron opacity-15 blur-2xl" />
-              <img src={farmer} alt="Ethiopian landscape with Birnihigo farm infrastructure" className="rounded-[2rem] shadow-elegant w-full h-[520px] object-cover" loading="lazy" width={1280} height={960} />
+              <img src={farmer} alt="Community distribution of Birnihigo poultry" className="rounded-[2rem] shadow-elegant w-full h-[520px] object-cover" loading="lazy" width={1280} height={960} />
               <div className="absolute -bottom-6 -right-6 max-w-[260px] rounded-2xl border border-border bg-card p-5 shadow-elegant">
                 <p className="text-3xl font-bold text-primary">2,000+</p>
                 <p className="mt-1 text-sm text-foreground/65">Contract farmers in our growth pipeline — empowering youth and women.</p>
