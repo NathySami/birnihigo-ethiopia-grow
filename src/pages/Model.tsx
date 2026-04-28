@@ -22,7 +22,7 @@ export default function Model() {
     <>
       <PageHero
         eyebrow="Our Model"
-        title="From Farm to Fork: a fully integrated system."
+        title="Fully integrated Poultry system Value Chain."
         subtitle="Birnihigo integrates every stage of poultry production into one coordinated, traceable, execution-driven system."
         image={farmHouse}
         imageAlt="Long view inside a Birnihigo broiler house — automated feeding lines and bio-secure environment"
