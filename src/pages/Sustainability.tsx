@@ -3,7 +3,7 @@ import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
 import { Droplets, Flame, Leaf, Recycle, Sun, Users, Sprout, Zap } from "lucide-react";
 import { ValueChainFlow } from "@/components/site/ValueChainFlow";
-import sustain from "@/assets/sustainability.jpg";
+import sustain from "@/assets/real-farm-landscape.jpg";
 import farmGrow from "@/assets/farm-grow-out.jpg";
 import farmFeederCloseup from "@/assets/farm-feeder-closeup.jpg";
 

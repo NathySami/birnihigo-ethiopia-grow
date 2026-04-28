@@ -3,7 +3,7 @@ import { Building2, Egg, Factory, Sprout, Truck, Wheat, CheckCircle2, MapPin } f
 import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
 import { ValueChainFlow } from "@/components/site/ValueChainFlow";
-import farmHouse from "@/assets/farm-broiler-house.jpg";
+import farmHouse from "@/assets/real-broiler-house-silo.jpg";
 
 const stages = [
   { icon: Egg, title: "Parent Stock Farm", body: "Our integrated value chain begins not at the hatchery but at the parent stock farm — securing the genetic foundation for productivity and product quality." },

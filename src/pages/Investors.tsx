@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Banknote, Building, Download, Globe2, Mail, Package, Wheat } from "lucide-react";
 import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
-import facility from "@/assets/facility-exterior.jpg";
+import facility from "@/assets/real-feedmill-exterior.jpg";
 
 const cases = [
   { title: "Structural Market Gap", body: "Low protein consumption and a fragmented production system create a sizeable, durable opportunity." },
