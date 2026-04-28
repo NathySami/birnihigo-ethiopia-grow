@@ -40,7 +40,7 @@ const sustainPillars = [
 
 const Index = () => {
   useEffect(() => {
-    document.title = "Birnihigo Integrated Farms — Ethiopia's First Fully Integrated Poultry System";
+    document.title = "Birnihigo Integrated Farms — Ethiopia's First Fully Integrated Poultry System at Scale";
     const meta = document.querySelector('meta[name="description"]') ?? document.createElement("meta");
     meta.setAttribute("name", "description");
     meta.setAttribute("content", "Birnihigo Integrated Farms is Ethiopia's first vertically integrated poultry platform delivering affordable, halal, export-ready protein at national scale.");
@@ -127,6 +127,7 @@ const Index = () => {
               <Reveal delay={0.05}>
                 <h2 className="mt-5 text-3xl font-bold tracking-tight text-primary md:text-5xl text-balance">
                   An integrated poultry value chain — <span className="text-secondary uppercase">fully integrated poultry value chain.</span>
+                  An integrated poultry value chain — <span className="text-secondary">Fully Integreted Poultry Value Chain </span>
                 </h2>
               </Reveal>
             </div>
