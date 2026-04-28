@@ -281,8 +281,8 @@ const Index = () => {
                 </h2>
               </Reveal>
             </div>
-            <Reveal delay={0.1}>
-              <p className="md:col-span-5 text-base leading-relaxed text-foreground/70">
+            <Reveal delay={0.1} className="md:col-span-5">
+              <p className="text-base leading-relaxed text-foreground/70">
                 From parent stock houses and brooding rooms to grow-out barns and feed infrastructure — every stage runs under controlled, science-driven conditions.
               </p>
             </Reveal>
