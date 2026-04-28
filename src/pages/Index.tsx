@@ -52,6 +52,25 @@ const Index = () => {
       {/* HERO — scrollytelling */}
       <ScrollytellingHero />
 
+      {/* MISSION QUOTE BAND */}
+      <section className="bg-gradient-cafe py-20 md:py-28 text-primary-foreground">
+        <div className="container-wide grid gap-10 md:grid-cols-12 md:items-center">
+          <Reveal className="md:col-span-8">
+            <p className="text-2xl font-extrabold uppercase italic leading-[1.15] tracking-tight md:text-4xl lg:text-[2.75rem] text-balance">
+              "Driving national food sovereignty through integrated, science-based poultry systems."
+            </p>
+          </Reveal>
+          <Reveal delay={0.1} className="md:col-span-4">
+            <div className="flex items-start gap-5">
+              <span className="mt-2 hidden h-px w-14 shrink-0 bg-secondary md:block" />
+              <p className="text-xs font-bold uppercase leading-relaxed tracking-[0.25em] text-secondary md:text-sm">
+                Transforming production into a reliable source of safe, affordable protein for 135M+ citizens.
+              </p>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       {/* METRICS BAND */}
       <section className="bg-primary-deep py-16">
         <div className="container-wide">
