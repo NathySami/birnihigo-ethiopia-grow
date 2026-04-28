@@ -38,6 +38,11 @@
     --cream: 35 38% 90%;               /* White Chocolate */
     --cream-deep: 35 30% 84%;
 
+    /* Neutral accents */
+    --ink: 0 0% 6%;                    /* Near-black accent */
+    --ink-foreground: 35 40% 97%;
+    --ink-soft: 0 0% 14%;              /* Slightly lifted black for layering */
+
     --muted: 35 30% 92%;
     --muted-foreground: 38 20% 38%;
 
@@ -55,6 +60,7 @@
     --gradient-saffron: linear-gradient(135deg, hsl(35 99% 58%) 0%, hsl(40 100% 73%) 100%);
     --gradient-cafe: linear-gradient(135deg, hsl(38 55% 20%) 0%, hsl(38 48% 32%) 100%);
     --gradient-cream: linear-gradient(180deg, hsl(35 40% 97%) 0%, hsl(35 38% 90%) 100%);
+    --gradient-ink: linear-gradient(135deg, hsl(0 0% 6%) 0%, hsl(38 55% 14%) 100%);
 
     /* Shadows */
     --shadow-soft: 0 4px 20px -4px hsl(38 48% 18% / 0.12);
@@ -146,6 +152,7 @@
   .bg-gradient-saffron { background-image: var(--gradient-saffron); }
   .bg-gradient-cafe { background-image: var(--gradient-cafe); }
   .bg-gradient-cream { background-image: var(--gradient-cream); }
+  .bg-gradient-ink { background-image: var(--gradient-ink); }
 
   .shadow-soft { box-shadow: var(--shadow-soft); }
   .shadow-elegant { box-shadow: var(--shadow-elegant); }
