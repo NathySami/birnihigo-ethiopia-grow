@@ -75,9 +75,9 @@ const Index = () => {
               Birnihigo Integrated Farms
             </p>
             <h1 className="mt-8 text-4xl font-extrabold uppercase leading-[1.05] tracking-tight text-primary-foreground sm:text-5xl md:text-6xl lg:text-[4.25rem] text-balance">
-              Building Ethiopia's First<br />
-              <span className="text-secondary">Fully Integrated Poultry System</span><br />
-              to Deliver Affordable Protein at National Scale
+              BUILDING ETHIOPIA'S FIRST<br />
+              <span className="text-secondary">FULLY INTEGRATED POULTRY SYSTEM</span><br />
+              AT SCALE
             </h1>
             <p className="mx-auto mt-8 max-w-3xl text-base leading-relaxed text-primary-foreground/85 md:text-lg text-pretty">
               Birnihigo Integrated Farms is a vertically integrated agribusiness platform designed to solve Ethiopia's poultry system inefficiencies through industrial-scale production, biosecurity excellence, and market integration.
