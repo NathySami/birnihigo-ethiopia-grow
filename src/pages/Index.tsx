@@ -273,7 +273,7 @@ const Index = () => {
       <section className="relative bg-background py-24 md:py-32">
         <div className="container-wide">
           <div className="grid gap-10 md:grid-cols-12 md:items-end">
-            <div className="md:col-span-7">
+            <div className="md:col-span-8">
               <Reveal><p className="eyebrow">Inside the Farm</p></Reveal>
               <Reveal delay={0.05}>
                 <h2 className="mt-5 text-3xl font-bold tracking-tight text-primary md:text-5xl text-balance">
@@ -281,8 +281,8 @@ const Index = () => {
                 </h2>
               </Reveal>
             </div>
-            <Reveal delay={0.1} className="md:col-span-5">
-              <p className="text-base leading-relaxed text-foreground/70">
+            <Reveal delay={0.1} className="md:col-span-4">
+              <p className="text-base leading-relaxed text-foreground/70 md:pb-2">
                 From parent stock houses and brooding rooms to grow-out barns and feed infrastructure — every stage runs under controlled, science-driven conditions.
               </p>
             </Reveal>
