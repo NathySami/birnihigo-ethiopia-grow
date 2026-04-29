@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Bird, Compass, HeartHandshake, Sparkles, Telescope, Users, CheckCircle2, ShieldCheck, Globe2, Sprout, Factory, Handshake, GraduationCap, FlaskConical } from "lucide-react";
+import { ArrowRight, Bird, Compass, HeartHandshake, Sparkles, Telescope, Users, CheckCircle2, ShieldCheck, Globe2, Sprout, Factory, Handshake, GraduationCap, FlaskConical, Bug, Sun, Recycle, Zap, Droplets, Leaf, Wheat, Snowflake, Layers, Target } from "lucide-react";
 import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
 import { Logo } from "@/components/site/Logo";
@@ -51,22 +51,48 @@ const values = [
 ];
 
 const commitments = [
-  { icon: Sprout, text: "Delivering affordable, high-quality poultry protein to the local market." },
-  { icon: Handshake, text: "Empowering farmers through structured contract farming systems." },
-  { icon: Globe2, text: "Advancing toward Halal-certified, export-ready production." },
-  { icon: Factory, text: "Setting new standards through vertically integrated excellence." },
-  { icon: ShieldCheck, text: "Upholding uncompromised, science-based biosecurity across all operations." },
-  { icon: GraduationCap, text: "Building industry talent through poultry research and academic partnerships." },
+  { icon: Sprout, text: "Delivering affordable, high-quality protein at national scale — not as a luxury, but as a baseline." },
+  { icon: Handshake, text: "Building a structured contract farming ecosystem integrating thousands of smallholders." },
+  { icon: Globe2, text: "Advancing climate-resilient, Halal-aligned, export-ready production infrastructure." },
+  { icon: Factory, text: "Setting new standards through fully integrated, platform-grade execution." },
+  { icon: ShieldCheck, text: "Embedding science-driven biosecurity as a system-level discipline, not a protocol." },
+  { icon: GraduationCap, text: "Investing in talent through poultry research, academic partnerships, and inclusion." },
 ];
 
 const milestones = [
   "Established as chick supplier (2013)",
   "Introduced contract farming model from inception",
-  "Transitioned to vertical integration (2014)",
-  "Secured 42+ hectares bio-secured site",
-  "Developed breeding, broiler, and processing infrastructure",
-  "Institutionalized science-driven biosecurity systems",
-  "Positioned for Halal-certified, export-ready production",
+  "Transitioned to full vertical integration (2014)",
+  "Secured 42+ hectares bio-secured platform in Afar",
+  "Developed parent stock, hatchery, broiler, feed and processing infrastructure",
+  "Institutionalized science-driven, system-level biosecurity",
+  "600 MT cold storage capacity established",
+  "Positioned for Halal-aligned, export-ready production",
+];
+
+const climateSmart = [
+  { icon: Wheat, title: "Feed Security & Agricultural Integration", body: "Large-scale crop cultivation (maize, soybean) and approximately 2,000 hectares developed for feed-ingredient production." },
+  { icon: Sprout, title: "Moringa Cultivation", body: "Drought-resilient, nutrient-rich feed supplement grown on-site — turning a harsh climate into an agronomic advantage." },
+  { icon: Bug, title: "Black Soldier Fly (BSF)", body: "Bioconversion of organic waste streams into high-value circular protein inputs for feed." },
+  { icon: Recycle, title: "Circular Resource Use", body: "Organic waste converted to fertilizer; energy and nutrient cycles closed through biogas and BSF systems." },
+  { icon: Sun, title: "Solar Integration", body: "Solar energy supporting farm and processing operations — reducing dependence on unstable grid power." },
+  { icon: Zap, title: "Hybrid Renewable Systems", body: "Solar + biogas hybrids ensuring uninterrupted operations and biosecurity stability in remote environments." },
+];
+
+const infrastructure = [
+  { icon: Layers, label: "Modern parent stock farms" },
+  { icon: Sprout, label: "Hatchery operations" },
+  { icon: Factory, label: "Broiler production units" },
+  { icon: Wheat, label: "Feed mill platform" },
+  { icon: Factory, label: "Processing infrastructure" },
+  { icon: Snowflake, label: "600 MT cold storage capacity" },
+];
+
+const intersections = [
+  { icon: Sprout, title: "Food Security", body: "Affordable protein delivered at national scale." },
+  { icon: Leaf, title: "Climate Resilience", body: "A model proven in Ethiopia's harshest climate zone." },
+  { icon: Users, title: "Economic Inclusion", body: "Smallholders, youth and women integrated into one system." },
+  { icon: Target, title: "Import Substitution", body: "Strengthening domestic capacity, reducing reliance on imports." },
 ];
 
 export default function About() {
@@ -74,34 +100,34 @@ export default function About() {
   return (
     <>
       <PageHero
-        eyebrow="Who We Are"
-        title="A vertically integrated poultry company, inspired by the Hoopoe — Birnihigo."
-        subtitle="Established in 2013, Birnihigo Integrated Farms is driven by a simple but powerful vision: to make high-quality, affordable protein accessible while building a resilient, science-driven, and export-ready poultry system."
+        eyebrow="About Birnihigo Integrated Farms PLC"
+        title="Ethiopia does not have a poultry production problem — it has a system design failure. Birnihigo was built to fix it."
+        subtitle="A fully integrated, climate-resilient agribusiness platform — engineered to deliver affordable protein at scale, integrate thousands of smallholders, and prove that sustainable production is possible even in arid, climate-stressed environments."
       />
 
       {/* Origin story */}
       <section className="bg-background pt-24 pb-12">
         <div className="container-tight">
-          <Reveal><p className="eyebrow">Our Story</p></Reveal>
+          <Reveal><p className="eyebrow">A System, Not Just a Farm</p></Reveal>
           <Reveal delay={0.05}>
             <h2 className="mt-5 text-3xl font-bold tracking-tight text-primary md:text-4xl text-balance">
-              From a day-old chick supply operation to a fully integrated, bio-secure value chain.
+              Birnihigo is not a conventional poultry producer — it is a fully integrated agribusiness platform.
             </h2>
           </Reveal>
           <div className="mt-8 space-y-5 text-lg leading-relaxed text-foreground/75">
             <Reveal delay={0.08}>
               <p>
-                From the very beginning, Birnihigo was built not only as a production company, but as a <strong className="text-primary">farmer-inclusive model</strong> — introducing contract farming as a core pillar of its operations and empowering local farmers through structured, market-linked poultry production systems.
+                Despite strong and growing demand, Ethiopia's poultry sector remains fragmented, inefficient, and unable to deliver affordable protein at scale. Birnihigo was created as a direct response to this gap — designed from inception as a <strong className="text-primary">platform, not a production unit</strong>; an <strong className="text-primary">infrastructure, not a facility</strong>.
               </p>
             </Reveal>
             <Reveal delay={0.12}>
               <p>
-                What began as a day-old chick supply operation has evolved into a fully integrated, bio-secure poultry value chain — from breeding and hatchery to broiler production, processing, and market delivery.
+                Our operations integrate the entire value chain — breeding and parent stock management, hatchery operations, feed production, broiler farming, processing and cold-chain distribution. This level of integration allows us to control cost, ensure quality, and stabilize supply — making poultry meat accessible, not a luxury.
               </p>
             </Reveal>
             <Reveal delay={0.16}>
               <p>
-                Located in <strong className="text-primary">Awash–Afar, Gabi Resu Zone</strong>, across 42+ hectares, Birnihigo operates within a conceptually bio-secured environment, guided by an unwavering principle:
+                Located in the <strong className="text-primary">Afar Regional State</strong> across three segregated, conceptually bio-secured sites covering 42+ hectares under long-term lease, Birnihigo operates by an unwavering principle:
               </p>
             </Reveal>
           </div>
@@ -110,6 +136,174 @@ export default function About() {
               "Biosecurity is not a protocol — it is a science-driven system embedded in every operation."
             </blockquote>
           </Reveal>
+        </div>
+      </section>
+
+      {/* BUILDING IN A CHALLENGING ENVIRONMENT */}
+      <section className="bg-cream py-24">
+        <div className="container-wide grid gap-12 lg:grid-cols-12 lg:items-center">
+          <div className="lg:col-span-6">
+            <Reveal><p className="eyebrow">Building in a Challenging Environment</p></Reveal>
+            <Reveal delay={0.05}>
+              <h2 className="mt-5 text-3xl font-bold tracking-tight text-primary md:text-5xl text-balance">
+                Afar — a climate challenge zone we break through by <span className="text-secondary">resilience.</span>
+              </h2>
+            </Reveal>
+            <Reveal delay={0.1}>
+              <p className="mt-6 text-lg leading-relaxed text-foreground/75">
+                We intentionally chose Afar — an environment widely seen as unsuitable for intensive agriculture — to demonstrate that with the right system design, discipline, and biosecurity, sustainable production is possible even in arid and climate-stressed environments.
+              </p>
+            </Reveal>
+            <Reveal delay={0.15}>
+              <p className="mt-4 text-lg leading-relaxed text-foreground/75">
+                This approach expands the boundaries of agricultural potential in Ethiopia and contributes to climate-resilient production models — directly aligned with the <strong className="text-primary">UN Sustainable Development Goals</strong>.
+              </p>
+            </Reveal>
+          </div>
+          <Reveal delay={0.1} className="lg:col-span-6">
+            <div className="rounded-[2rem] bg-gradient-cafe p-10 text-primary-foreground shadow-elegant">
+              <Leaf className="h-10 w-10 text-secondary" />
+              <p className="mt-6 text-2xl font-bold leading-snug md:text-3xl text-balance">
+                "With the right system design, discipline, and biosecurity, sustainable production is possible even in arid and climate-stressed environments."
+              </p>
+              <p className="mt-6 text-sm font-semibold uppercase tracking-widest text-secondary">Climate Adaptation in Action</p>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* CLIMATE-SMART & SUSTAINABLE APPROACH */}
+      <section className="bg-background py-24">
+        <div className="container-wide">
+          <div className="max-w-3xl">
+            <Reveal><p className="eyebrow">Climate-Smart & Sustainable Approach</p></Reveal>
+            <Reveal delay={0.05}>
+              <h2 className="mt-5 text-3xl font-bold tracking-tight text-primary md:text-5xl text-balance">
+                Sustainability is not an add-on — <span className="text-secondary">it is embedded in our system.</span>
+              </h2>
+            </Reveal>
+            <Reveal delay={0.1}>
+              <p className="mt-6 text-lg leading-relaxed text-foreground/75">
+                Birnihigo is actively developing a closed-loop, climate-smart production model — combining feed security, drought-resilient inputs, circular protein, and renewable energy.
+              </p>
+            </Reveal>
+          </div>
+
+          <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {climateSmart.map((c, i) => (
+              <Reveal key={c.title} delay={i * 0.05}>
+                <div className="group h-full rounded-2xl border border-border bg-card p-7 shadow-card transition-all hover:-translate-y-1 hover:shadow-elegant">
+                  <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-saffron text-secondary-foreground shadow-soft">
+                    <c.icon className="h-5 w-5" />
+                  </div>
+                  <h3 className="mt-5 text-lg font-bold text-primary">{c.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-foreground/70">{c.body}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* EMPOWERING PEOPLE — Contract farming ecosystem */}
+      <section className="bg-cream py-24">
+        <div className="container-wide grid gap-12 lg:grid-cols-12 lg:items-center">
+          <Reveal className="lg:col-span-5">
+            <img
+              src={farmFeeding}
+              alt="Women trained in poultry production through Birnihigo's structured contract farming ecosystem"
+              className="w-full rounded-[2rem] object-cover h-[480px] shadow-elegant"
+              loading="lazy"
+              width={1280}
+              height={960}
+            />
+          </Reveal>
+          <div className="lg:col-span-7">
+            <Reveal><p className="eyebrow">Empowering People Through Structured Growth</p></Reveal>
+            <Reveal delay={0.05}>
+              <h2 className="mt-5 text-3xl font-bold tracking-tight text-primary md:text-5xl text-balance">
+                A structured contract farming ecosystem — integrating <span className="text-secondary">thousands of smallholders.</span>
+              </h2>
+            </Reveal>
+            <Reveal delay={0.1}>
+              <p className="mt-6 text-lg leading-relaxed text-foreground/75">
+                Beyond production, Birnihigo is building a structured contract farming ecosystem that transforms smallholder participation from informal activity into a coordinated and commercially viable system.
+              </p>
+            </Reveal>
+            <Reveal delay={0.15}>
+              <ul className="mt-8 grid gap-3 sm:grid-cols-2">
+                {[
+                  "Integrate thousands of smallholder farmers",
+                  "Income opportunities for youth and women",
+                  "Consistent quality through controlled production",
+                  "Capacity expansion without compromising standards",
+                ].map((t) => (
+                  <li key={t} className="flex items-start gap-3 rounded-xl border border-border bg-background px-4 py-3 text-sm font-medium text-foreground/80">
+                    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-secondary" />
+                    {t}
+                  </li>
+                ))}
+              </ul>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
+      {/* CURRENT SCALE & INFRASTRUCTURE */}
+      <section className="bg-background py-24">
+        <div className="container-wide">
+          <div className="max-w-3xl">
+            <Reveal><p className="eyebrow">Current Scale & Infrastructure</p></Reveal>
+            <Reveal delay={0.05}>
+              <h2 className="mt-5 text-3xl font-bold tracking-tight text-primary md:text-5xl text-balance">
+                One of the few <span className="text-secondary">fully integrated poultry platforms</span> in Ethiopia.
+              </h2>
+            </Reveal>
+            <Reveal delay={0.1}>
+              <p className="mt-6 text-lg leading-relaxed text-foreground/75">
+                Three segregated, conceptually bio-secured sites covering over <strong className="text-primary">42 hectares under long-term lease</strong> in the Afar Region.
+              </p>
+            </Reveal>
+          </div>
+          <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {infrastructure.map((i, idx) => (
+              <Reveal key={i.label} delay={idx * 0.05}>
+                <div className="flex items-center gap-4 rounded-2xl border border-border bg-card p-5 shadow-card">
+                  <div className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-primary text-primary-foreground">
+                    <i.icon className="h-5 w-5" />
+                  </div>
+                  <span className="text-base font-semibold text-primary">{i.label}</span>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* A PLATFORM FOR SCALE AND IMPACT */}
+      <section className="bg-cream py-24">
+        <div className="container-wide">
+          <div className="max-w-3xl">
+            <Reveal><p className="eyebrow">A Platform for Scale and Impact</p></Reveal>
+            <Reveal delay={0.05}>
+              <h2 className="mt-5 text-3xl font-bold tracking-tight text-primary md:text-5xl text-balance">
+                Positioned at the intersection of national priorities.
+              </h2>
+            </Reveal>
+          </div>
+          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {intersections.map((p, i) => (
+              <Reveal key={p.title} delay={i * 0.06}>
+                <div className="h-full rounded-2xl border border-border bg-background p-7 shadow-card transition-all hover:-translate-y-1 hover:shadow-elegant">
+                  <div className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-secondary text-secondary-foreground">
+                    <p.icon className="h-5 w-5" />
+                  </div>
+                  <h3 className="mt-5 text-lg font-bold text-primary">{p.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-foreground/70">{p.body}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -289,13 +483,33 @@ export default function About() {
         </div>
       </section>
 
-      <section className="bg-cream py-20">
-        <div className="container-tight rounded-[2rem] bg-gradient-saffron p-10 text-center md:p-14">
-          <p className="text-3xl font-bold text-secondary-foreground md:text-4xl">42+ hectares of vertically integrated poultry excellence.</p>
-          <p className="mt-4 text-secondary-foreground/85">From parent stock farm to Halal-certified processing — built under real operational conditions, designed for scalability and replication.</p>
-          <Link to="/model" className="mt-8 inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground hover:bg-primary-deep transition-colors">
-            Explore the model <ArrowRight className="h-4 w-4" />
-          </Link>
+      {/* LOOKING FORWARD + FINAL STATEMENT */}
+      <section className="bg-background py-20">
+        <div className="container-tight">
+          <Reveal><p className="eyebrow">Looking Forward</p></Reveal>
+          <Reveal delay={0.05}>
+            <h2 className="mt-5 text-3xl font-bold tracking-tight text-primary md:text-5xl text-balance">
+              Evolving from an integrated production system into a <span className="text-secondary">resource-secured, climate-resilient and scalable agribusiness platform.</span>
+            </h2>
+          </Reveal>
+        </div>
+      </section>
+
+      <section className="bg-primary-deep py-20 text-primary-foreground">
+        <div className="container-tight text-center">
+          <Reveal>
+            <p className="text-xs font-bold uppercase tracking-[0.4em] text-secondary">Final Statement</p>
+          </Reveal>
+          <Reveal delay={0.05}>
+            <p className="mt-8 text-3xl font-extrabold leading-tight md:text-5xl text-balance">
+              Birnihigo Integrated Farms is not simply producing poultry. <span className="text-secondary italic">It is redefining how poultry is produced, integrated, and delivered — at scale, and with purpose.</span>
+            </p>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <Link to="/investors" className="mt-10 inline-flex items-center gap-2 rounded-full bg-secondary px-7 py-3.5 text-sm font-semibold text-secondary-foreground hover:scale-[1.03] transition-transform">
+              Investor Relations <ArrowRight className="h-4 w-4" />
+            </Link>
+          </Reveal>
         </div>
       </section>
     </>

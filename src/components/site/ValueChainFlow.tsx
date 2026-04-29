@@ -1,9 +1,9 @@
-import { Egg, Sprout, Wheat, Building2, Factory, Truck, Globe2, ArrowRight } from "lucide-react";
+import { Egg, EggFried, Wheat, Building2, Factory, Truck, Globe2, ArrowRight } from "lucide-react";
 import { Reveal } from "@/components/site/Reveal";
 
 const stages = [
-  { icon: Egg, label: "Breeder", note: "Genetic foundation" },
-  { icon: Sprout, label: "Hatchery", note: "Day-old chicks" },
+  { icon: Egg, label: "Parent Stock", note: "Genetic foundation" },
+  { icon: EggFried, label: "Hatchery", note: "Day-old chicks" },
   { icon: Wheat, label: "Feed Mill", note: "6 t/hr, integrated crops" },
   { icon: Building2, label: "Broiler", note: "Owned + contract farms" },
   { icon: Factory, label: "Processing", note: "Halal, 48 t/day" },
