@@ -52,18 +52,18 @@ const Index = () => {
       {/* HERO — scrollytelling */}
       <ScrollytellingHero />
 
-      {/* MISSION QUOTE BAND */}
-      <section className="bg-gradient-cafe py-20 md:py-28 text-primary-foreground">
+      {/* MISSION QUOTE BAND — Deep Saffron dominant */}
+      <section className="bg-gradient-saffron py-20 md:py-28 text-secondary-foreground">
         <div className="container-wide grid gap-10 md:grid-cols-12 md:items-center">
           <Reveal className="md:col-span-8">
-            <p className="text-2xl font-extrabold uppercase italic leading-[1.15] tracking-tight md:text-4xl lg:text-[2.75rem] text-balance">
+            <p className="text-2xl font-extrabold uppercase italic leading-[1.15] tracking-tight md:text-4xl lg:text-[2.75rem] text-balance text-primary">
               "Ethiopia does not have a poultry production problem — it has a system design failure. We exist to fix it."
             </p>
           </Reveal>
           <Reveal delay={0.1} className="md:col-span-4">
             <div className="flex items-start gap-5">
-              <span className="mt-2 hidden h-px w-14 shrink-0 bg-secondary md:block" />
-              <p className="text-xs font-bold uppercase leading-relaxed tracking-[0.25em] text-secondary md:text-sm">
+              <span className="mt-2 hidden h-px w-14 shrink-0 bg-primary md:block" />
+              <p className="text-xs font-bold uppercase leading-relaxed tracking-[0.25em] text-primary md:text-sm">
                 A national-scale, climate-resilient protein platform — engineered for affordability, biosecurity and inclusion.
               </p>
             </div>
@@ -71,17 +71,17 @@ const Index = () => {
         </div>
       </section>
 
-      {/* METRICS BAND */}
-      <section className="bg-primary-deep py-16">
+      {/* METRICS BAND — café for contrast against saffron above */}
+      <section className="bg-cafe-deep py-16">
         <div className="container-wide">
-          <div className="grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-primary-foreground/15 bg-primary-foreground/10 md:grid-cols-4">
+          <div className="grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-secondary/30 bg-secondary/10 md:grid-cols-4">
             {metrics.map((m, i) => (
-              <div key={i} className="bg-primary-deep/80 p-6 md:p-7">
+              <div key={i} className="bg-cafe-deep/90 p-6 md:p-7">
                 <div className="flex items-baseline gap-1.5">
                   <span className="text-3xl font-bold text-secondary md:text-4xl">{m.value}</span>
-                  <span className="text-sm font-medium text-primary-foreground/70">{m.suffix}</span>
+                  <span className="text-sm font-medium text-cafe-foreground/70">{m.suffix}</span>
                 </div>
-                <p className="mt-2 text-sm text-primary-foreground/75">{m.label}</p>
+                <p className="mt-2 text-sm text-cafe-foreground/75">{m.label}</p>
               </div>
             ))}
           </div>
@@ -381,31 +381,31 @@ const Index = () => {
         </div>
       </section>
 
-      {/* PURPOSE — closing CTA */}
-      <section className="relative overflow-hidden bg-primary-deep py-24 text-primary-foreground md:py-32">
-        <div className="absolute -top-40 -right-20 h-[32rem] w-[32rem] rounded-full bg-secondary/20 blur-3xl" />
-        <div className="absolute -bottom-32 -left-20 h-[28rem] w-[28rem] rounded-full bg-bronze/20 blur-3xl" />
+      {/* PURPOSE — closing CTA, Deep Saffron dominant */}
+      <section className="relative overflow-hidden bg-gradient-saffron py-24 text-secondary-foreground md:py-32">
+        <div className="absolute -top-40 -right-20 h-[32rem] w-[32rem] rounded-full bg-primary/20 blur-3xl" />
+        <div className="absolute -bottom-32 -left-20 h-[28rem] w-[28rem] rounded-full bg-bronze/30 blur-3xl" />
         <div className="container-tight relative text-center">
           <Reveal>
-            <p className="eyebrow justify-center !text-secondary">Our Purpose</p>
+            <p className="eyebrow justify-center !text-primary before:!bg-primary">Our Purpose</p>
           </Reveal>
           <Reveal delay={0.05}>
-            <h2 className="mt-6 text-4xl font-bold leading-tight tracking-tight md:text-6xl text-balance">
-              Redefining how protein is produced, integrated and delivered — <span className="italic font-light text-secondary">at scale, with purpose.</span>
+            <h2 className="mt-6 text-4xl font-bold leading-tight tracking-tight md:text-6xl text-balance text-primary">
+              Redefining how protein is produced, integrated and delivered — <span className="italic font-light text-cafe-deep">at scale, with purpose.</span>
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
-            <p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/80 leading-relaxed">
+            <p className="mx-auto mt-6 max-w-2xl text-lg text-primary/85 leading-relaxed">
               A resource-secured, climate-resilient and scalable agribusiness platform — built in Ethiopia, by Ethiopians, for a national protein future.
             </p>
           </Reveal>
           <Reveal delay={0.15}>
             <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-              <Link to="/investors" className="group inline-flex items-center gap-2 rounded-full bg-secondary px-7 py-4 text-base font-semibold text-secondary-foreground shadow-saffron transition-all hover:scale-[1.03]">
+              <Link to="/investors" className="group inline-flex items-center gap-2 rounded-full bg-primary px-7 py-4 text-base font-semibold text-primary-foreground shadow-elegant transition-all hover:scale-[1.03] hover:bg-primary-deep">
                 Investor Relations
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
-              <Link to="/about" className="group inline-flex items-center gap-2 rounded-full border border-primary-foreground/30 px-7 py-4 text-base font-semibold text-primary-foreground transition-all hover:bg-primary-foreground hover:text-primary">
+              <Link to="/about" className="group inline-flex items-center gap-2 rounded-full border-2 border-primary/40 px-7 py-4 text-base font-semibold text-primary transition-all hover:bg-primary hover:text-primary-foreground">
                 Our Story
                 <ArrowUpRight className="h-4 w-4 transition-transform group-hover:rotate-45" />
               </Link>
