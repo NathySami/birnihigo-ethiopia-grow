@@ -144,7 +144,7 @@ export const Navbar = () => {
 
         <Link
           to="/contact"
-          className="hidden lg:inline-flex items-center gap-2 rounded-full bg-gradient-cafe px-7 py-3.5 text-sm font-bold uppercase tracking-wider text-secondary shadow-soft transition-all hover:shadow-elegant hover:scale-[1.02] group"
+          className="hidden lg:inline-flex items-center gap-2 rounded-full bg-gradient-saffron px-7 py-3.5 text-sm font-bold uppercase tracking-wider text-secondary-foreground shadow-saffron transition-all hover:shadow-elegant hover:scale-[1.02] group"
         >
           Get In Touch
           <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -192,7 +192,7 @@ export const Navbar = () => {
             </li>
           ))}
           <li className="pt-3">
-            <Link to="/contact" className="flex items-center justify-center gap-2 rounded-full bg-gradient-cafe px-6 py-3.5 text-sm font-bold uppercase tracking-wider text-secondary">
+            <Link to="/contact" className="flex items-center justify-center gap-2 rounded-full bg-gradient-saffron px-6 py-3.5 text-sm font-bold uppercase tracking-wider text-secondary-foreground shadow-saffron">
               Get In Touch <ArrowRight className="h-4 w-4" />
             </Link>
           </li>

@@ -27,6 +27,7 @@ export default {
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
+          deep: "hsl(var(--secondary-deep))",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
@@ -41,6 +42,11 @@ export default {
           foreground: "hsl(var(--accent-foreground))",
         },
         bronze: "hsl(var(--bronze))",
+        cafe: {
+          DEFAULT: "hsl(var(--cafe))",
+          deep: "hsl(var(--cafe-deep))",
+          foreground: "hsl(var(--cafe-foreground))",
+        },
         cream: {
           DEFAULT: "hsl(var(--cream))",
           deep: "hsl(var(--cream-deep))",

@@ -29,22 +29,22 @@ export function ValueChainFlow({
   return (
     <section
       className={`relative overflow-hidden py-20 md:py-28 ${
-        isDark ? "bg-gradient-cafe text-primary-foreground" : "bg-cream"
+        isDark ? "bg-gradient-saffron text-secondary-foreground" : "bg-cream"
       }`}
     >
       {/* Decorative glows */}
-      <div className="pointer-events-none absolute -top-24 -left-24 h-72 w-72 rounded-full bg-secondary/20 blur-3xl" aria-hidden />
-      <div className="pointer-events-none absolute -bottom-24 -right-24 h-72 w-72 rounded-full bg-bronze/20 blur-3xl" aria-hidden />
+      <div className="pointer-events-none absolute -top-24 -left-24 h-72 w-72 rounded-full bg-primary/15 blur-3xl" aria-hidden />
+      <div className="pointer-events-none absolute -bottom-24 -right-24 h-72 w-72 rounded-full bg-bronze/25 blur-3xl" aria-hidden />
 
       <div className="container-wide relative">
         <div className="max-w-3xl">
           <Reveal>
-            <p className={`eyebrow ${isDark ? "!text-secondary" : ""}`}>{eyebrow}</p>
+            <p className={`eyebrow ${isDark ? "!text-primary before:!bg-primary" : ""}`}>{eyebrow}</p>
           </Reveal>
           <Reveal delay={0.05}>
             <h2
               className={`mt-5 text-2xl font-bold leading-tight tracking-tight md:text-4xl text-balance ${
-                isDark ? "" : "text-primary"
+                isDark ? "text-primary" : "text-primary"
               }`}
             >
               {title}
@@ -54,7 +54,7 @@ export function ValueChainFlow({
             <Reveal delay={0.1}>
               <p
                 className={`mt-5 text-base md:text-lg leading-relaxed ${
-                  isDark ? "text-primary-foreground/80" : "text-foreground/70"
+                  isDark ? "text-primary/85" : "text-foreground/70"
                 }`}
               >
                 {subtitle}
@@ -75,14 +75,14 @@ export function ValueChainFlow({
                     <div
                       className={`group relative flex w-44 flex-col items-center rounded-2xl border p-5 text-center shadow-card transition-all hover:-translate-y-1 hover:shadow-elegant md:w-full ${
                         isDark
-                          ? "border-primary-foreground/15 bg-primary-foreground/5 backdrop-blur"
+                          ? "border-primary/15 bg-cream/40 backdrop-blur"
                           : "border-border bg-background"
                       }`}
                     >
                       <span
                         className={`absolute -top-3 left-1/2 -translate-x-1/2 rounded-full px-2.5 py-0.5 text-[10px] font-bold tracking-widest ${
                           isDark
-                            ? "bg-secondary text-secondary-foreground"
+                            ? "bg-primary text-primary-foreground"
                             : "bg-gradient-saffron text-secondary-foreground"
                         }`}
                       >
@@ -91,7 +91,7 @@ export function ValueChainFlow({
                       <div
                         className={`inline-flex h-12 w-12 items-center justify-center rounded-xl ${
                           isDark
-                            ? "bg-secondary text-secondary-foreground"
+                            ? "bg-primary text-primary-foreground shadow-soft"
                             : "bg-gradient-saffron text-secondary-foreground shadow-soft"
                         }`}
                       >
@@ -99,14 +99,14 @@ export function ValueChainFlow({
                       </div>
                       <p
                         className={`mt-4 text-sm font-bold ${
-                          isDark ? "text-primary-foreground" : "text-primary"
+                          isDark ? "text-primary" : "text-primary"
                         }`}
                       >
                         {s.label}
                       </p>
                       <p
                         className={`mt-1 text-xs leading-snug ${
-                          isDark ? "text-primary-foreground/65" : "text-foreground/60"
+                          isDark ? "text-primary/70" : "text-foreground/60"
                         }`}
                       >
                         {s.note}
@@ -116,7 +116,7 @@ export function ValueChainFlow({
                   {!isLast && (
                     <ArrowRight
                       className={`h-5 w-5 shrink-0 ${
-                        isDark ? "text-secondary" : "text-bronze"
+                        isDark ? "text-primary" : "text-bronze"
                       }`}
                       aria-hidden
                     />
