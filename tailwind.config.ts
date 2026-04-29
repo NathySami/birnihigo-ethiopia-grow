@@ -41,6 +41,11 @@ export default {
           foreground: "hsl(var(--accent-foreground))",
         },
         bronze: "hsl(var(--bronze))",
+        cafe: {
+          DEFAULT: "hsl(var(--cafe))",
+          deep: "hsl(var(--cafe-deep))",
+          foreground: "hsl(var(--cafe-foreground))",
+        },
         cream: {
           DEFAULT: "hsl(var(--cream))",
           deep: "hsl(var(--cream-deep))",
