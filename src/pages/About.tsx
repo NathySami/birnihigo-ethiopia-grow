@@ -495,18 +495,18 @@ export default function About() {
         </div>
       </section>
 
-      <section className="bg-primary-deep py-20 text-primary-foreground">
+      <section className="bg-gradient-saffron py-20 text-secondary-foreground">
         <div className="container-tight text-center">
           <Reveal>
-            <p className="text-xs font-bold uppercase tracking-[0.4em] text-secondary">Final Statement</p>
+            <p className="text-xs font-bold uppercase tracking-[0.4em] text-primary">Final Statement</p>
           </Reveal>
           <Reveal delay={0.05}>
-            <p className="mt-8 text-3xl font-extrabold leading-tight md:text-5xl text-balance">
-              Birnihigo Integrated Farms is not simply producing poultry. <span className="text-secondary italic">It is redefining how poultry is produced, integrated, and delivered — at scale, and with purpose.</span>
+            <p className="mt-8 text-3xl font-extrabold leading-tight md:text-5xl text-balance text-primary">
+              Birnihigo Integrated Farms is not simply producing poultry. <span className="text-cafe-deep italic">It is redefining how poultry is produced, integrated, and delivered — at scale, and with purpose.</span>
             </p>
           </Reveal>
           <Reveal delay={0.1}>
-            <Link to="/investors" className="mt-10 inline-flex items-center gap-2 rounded-full bg-secondary px-7 py-3.5 text-sm font-semibold text-secondary-foreground hover:scale-[1.03] transition-transform">
+            <Link to="/investors" className="mt-10 inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground hover:bg-primary-deep hover:scale-[1.03] transition-all">
               Investor Relations <ArrowRight className="h-4 w-4" />
             </Link>
           </Reveal>
