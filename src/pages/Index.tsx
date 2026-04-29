@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, ArrowUpRight, Building2, Egg, Factory, Leaf, Recycle, ShieldCheck, Sprout, Truck, Wheat } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Building2, Bug, Egg, EggFried, Factory, Leaf, Recycle, ShieldCheck, Sprout, Sun, Truck, Users, Wheat } from "lucide-react";
 import hero from "@/assets/real-broiler-house-interior.jpg";
 import broilers from "@/assets/farm-broilers-detail.jpg";
 import sustain from "@/assets/sustainability.jpg";
@@ -23,27 +23,27 @@ const metrics = [
 ];
 
 const valueChain = [
-  { icon: Egg, title: "Parent Stock", body: "Genetic foundation ensuring productivity and quality." },
-  { icon: Sprout, title: "Hatchery", body: "Controlled incubation delivering high-quality day-old chicks." },
-  { icon: Wheat, title: "Feed Mill", body: "6 ton/hour capacity producing optimized, traceable feed." },
-  { icon: Building2, title: "Broiler Farms", body: "Owned operations plus a growing contract farming network." },
-  { icon: Factory, title: "Processing", body: "Halal-certified facility with 48 tons/day throughput." },
-  { icon: Truck, title: "Cold Chain", body: "End-to-end distribution preserving product integrity." },
+  { icon: Egg, title: "Parent Stock", body: "Genetic foundation engineered for productivity, uniformity and quality." },
+  { icon: EggFried, title: "Hatchery", body: "Controlled incubation delivering high-performance day-old chicks at scale." },
+  { icon: Wheat, title: "Feed Platform", body: "6 t/hr mill, integrated cropping and innovative feed alternatives." },
+  { icon: Building2, title: "Broiler System", body: "Owned units plus a structured contract farming ecosystem." },
+  { icon: Factory, title: "Processing Infrastructure", body: "Halal-aligned, 48 t/day throughput with cold-chain integration." },
+  { icon: Truck, title: "Distribution", body: "End-to-end cold chain — fresh, traceable, market-ready protein." },
 ];
 
 const sustainPillars = [
-  { icon: Recycle, title: "100%", body: "Waste converted to fertilizer" },
-  { icon: Leaf, title: "99.9%", body: "Treated water reused" },
-  { icon: ShieldCheck, title: "Biogas", body: "Energy integration on-site" },
-  { icon: Sprout, title: "Moringa", body: "Climate-smart feed innovation" },
+  { icon: Sprout, title: "Moringa", body: "Drought-resilient, nutrient-rich feed supplement grown on-site." },
+  { icon: Bug, title: "BSF Protein", body: "Black Soldier Fly converting organic waste into circular protein." },
+  { icon: Sun, title: "Solar + Biogas", body: "Hybrid renewable energy securing remote, off-grid operations." },
+  { icon: Recycle, title: "Closed Loop", body: "Waste-to-fertilizer and water reuse — minimal-waste production." },
 ];
 
 const Index = () => {
   useEffect(() => {
-    document.title = "Birnihigo Integrated Farms — Ethiopia's First Fully Integrated Poultry System at Scale";
+    document.title = "Birnihigo Integrated Farms — Ethiopia's Climate-Resilient Protein Platform";
     const meta = document.querySelector('meta[name="description"]') ?? document.createElement("meta");
     meta.setAttribute("name", "description");
-    meta.setAttribute("content", "Birnihigo Integrated Farms is Ethiopia's first vertically integrated poultry platform delivering affordable, halal, export-ready protein at national scale.");
+    meta.setAttribute("content", "Birnihigo is Ethiopia's integrated, climate-resilient poultry platform — solving a national protein challenge through systems design, biosecurity, and inclusive scale.");
     document.head.appendChild(meta);
   }, []);
 
@@ -57,14 +57,14 @@ const Index = () => {
         <div className="container-wide grid gap-10 md:grid-cols-12 md:items-center">
           <Reveal className="md:col-span-8">
             <p className="text-2xl font-extrabold uppercase italic leading-[1.15] tracking-tight md:text-4xl lg:text-[2.75rem] text-balance">
-              "Driving national food sovereignty through integrated, science-based poultry systems."
+              "Ethiopia does not have a poultry production problem — it has a system design failure. We exist to fix it."
             </p>
           </Reveal>
           <Reveal delay={0.1} className="md:col-span-4">
             <div className="flex items-start gap-5">
               <span className="mt-2 hidden h-px w-14 shrink-0 bg-secondary md:block" />
               <p className="text-xs font-bold uppercase leading-relaxed tracking-[0.25em] text-secondary md:text-sm">
-                Transforming production into a reliable source of safe, affordable protein for 135M+ citizens.
+                A national-scale, climate-resilient protein platform — engineered for affordability, biosecurity and inclusion.
               </p>
             </div>
           </Reveal>
@@ -96,17 +96,17 @@ const Index = () => {
           </Reveal>
           <Reveal delay={0.05}>
             <h2 className="mt-6 text-3xl font-bold leading-tight tracking-tight text-primary md:text-5xl text-balance">
-              Ethiopia's poultry challenge is not primarily a production issue —
-              <span className="text-bronze"> it is a systems integration challenge.</span>
+              A system, not a farm. A platform, not a producer.
+              <span className="text-bronze"> Infrastructure for a nation's protein future.</span>
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
             <div className="mt-10 grid gap-6 md:grid-cols-2">
               <p className="text-lg leading-relaxed text-foreground/75">
-                A significant market opportunity exists, yet fragmentation across the value chain continues to constrain scale, efficiency, and affordability.
+                Despite strong, growing demand, Ethiopia's poultry sector remains fragmented, inefficient, and unable to deliver affordable protein at scale. That is a design problem — not a market one.
               </p>
               <p className="text-lg leading-relaxed text-foreground/75">
-                Birnihigo is designed as an integrated, execution-driven model to close this gap — built under real conditions, ready to scale.
+                Birnihigo was created as a direct response: a fully integrated agribusiness platform engineered to deliver efficiency, consistency and scale — built and proven under real, climate-stressed conditions.
               </p>
             </div>
           </Reveal>
@@ -126,14 +126,13 @@ const Index = () => {
               </Reveal>
               <Reveal delay={0.05}>
                 <h2 className="mt-5 text-3xl font-bold tracking-tight text-primary md:text-5xl text-balance">
-                  An integrated poultry value chain — <span className="text-secondary uppercase">fully integrated poultry value chain.</span>
-                  An integrated poultry value chain — <span className="text-secondary">Fully Integreted Poultry Value Chain </span>
+                  One platform. <span className="text-secondary">Every stage of the value chain.</span>
                 </h2>
               </Reveal>
             </div>
             <Reveal delay={0.1} className="md:col-span-5">
               <p className="text-base text-foreground/70 leading-relaxed">
-                Birnihigo operates a fully integrated system covering breeding, hatchery, feed, broiler farming, processing, cold chain and distribution — ensuring cost efficiency, quality control, and scalability.
+                Breeding, hatchery, feed, broiler farming, processing, cold chain and distribution — operated as one coordinated system to control cost, ensure quality, and stabilize supply at national scale.
               </p>
             </Reveal>
           </div>
@@ -178,26 +177,31 @@ const Index = () => {
               <div className="absolute -inset-6 -z-10 rounded-[2rem] bg-gradient-saffron opacity-15 blur-2xl" />
               <img src={farmer} alt="Birnihigo training session empowering women and youth through integrated outgrow farming" className="rounded-[2rem] shadow-elegant w-full h-[520px] object-cover" loading="lazy" width={1280} height={960} />
               <div className="absolute -bottom-6 -right-6 max-w-[260px] rounded-2xl border border-border bg-card p-5 shadow-elegant">
-                <p className="text-3xl font-bold text-primary">2,000+</p>
-                <p className="mt-1 text-sm text-foreground/65">Contract farmers in our growth pipeline — empowering youth and women.</p>
+                <p className="text-3xl font-bold text-primary">1,000s</p>
+                <p className="mt-1 text-sm text-foreground/65">Smallholders integrated into a structured, commercially viable production ecosystem.</p>
               </div>
             </div>
           </Reveal>
           <div>
-            <Reveal><p className="eyebrow">National Impact</p></Reveal>
+            <Reveal><p className="eyebrow">Contract Farming Ecosystem</p></Reveal>
             <Reveal delay={0.05}>
               <h2 className="mt-5 text-3xl font-bold tracking-tight text-primary md:text-5xl text-balance">
-                Transforming Ethiopia's protein economy.
+                A structured production ecosystem — integrating thousands of smallholders.
               </h2>
             </Reveal>
             <Reveal delay={0.1}>
+              <p className="mt-6 text-lg leading-relaxed text-foreground/75">
+                Beyond production, Birnihigo is building a structured contract farming platform that transforms smallholder participation from informal activity into a coordinated, commercially viable system.
+              </p>
+            </Reveal>
+            <Reveal delay={0.15}>
               <ul className="mt-8 space-y-4">
                 {[
-                  "Expanding access to affordable, safe protein",
-                  "Reducing import dependency through local production",
-                  "Creating jobs for youth and women across the value chain",
-                  "Enabling export-ready, halal-certified poultry production",
-                  "Strengthening national food security",
+                  "Integrating thousands of smallholder farmers into one system",
+                  "Income opportunities engineered for youth and women",
+                  "Consistent quality through controlled production protocols",
+                  "Capacity expansion without compromising standards",
+                  "Inclusive participation across the entire value chain",
                 ].map((line) => (
                   <li key={line} className="flex gap-4 border-b border-border pb-4 text-base text-foreground/80">
                     <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-secondary" />
@@ -299,20 +303,20 @@ const Index = () => {
       <section className="relative bg-background py-24 md:py-32">
         <div className="container-wide grid gap-14 lg:grid-cols-12 lg:items-center">
           <div className="lg:col-span-6">
-            <Reveal><p className="eyebrow">Resilience</p></Reveal>
+            <Reveal><p className="eyebrow">Climate Resilience · Afar</p></Reveal>
             <Reveal delay={0.05}>
               <h2 className="mt-5 text-3xl font-bold tracking-tight text-primary md:text-5xl text-balance">
-                Built under real conditions.
+                Breaking through one of the world's harshest climates — by design.
               </h2>
             </Reveal>
             <Reveal delay={0.1}>
               <p className="mt-6 text-lg leading-relaxed text-foreground/70">
-                Developed in Afar under extreme climate and infrastructure constraints, Birnihigo has demonstrated resilience through continuous investment, infrastructure development, and operational scaling — proving the model in the hardest possible setting.
+                We intentionally chose Afar — an environment widely seen as unsuitable for intensive agriculture — to prove that with the right system design, biosecurity discipline, and climate-smart infrastructure, sustainable protein production is possible even in arid, climate-stressed zones. This is climate adaptation in action, aligned with the UN Sustainable Development Goals.
               </p>
             </Reveal>
             <Reveal delay={0.15}>
               <div className="mt-8 grid grid-cols-2 gap-4">
-                {["Heat-adapted housing", "Water conservation", "On-site biogas", "Bio-secure protocols"].map((t) => (
+                {["Heat-adapted infrastructure", "Water reuse & conservation", "Solar + biogas hybrids", "System-level biosecurity", "Moringa drought-resilient feed", "BSF circular protein"].map((t) => (
                   <div key={t} className="rounded-xl border border-border bg-cream/40 px-4 py-3 text-sm font-medium text-primary">{t}</div>
                 ))}
               </div>
@@ -330,11 +334,16 @@ const Index = () => {
       <section className="relative overflow-hidden bg-cream py-24 md:py-32">
         <div className="container-wide">
           <div className="max-w-3xl">
-            <Reveal><p className="eyebrow">Sustainability</p></Reveal>
+            <Reveal><p className="eyebrow">Climate-Smart Production Model</p></Reveal>
             <Reveal delay={0.05}>
               <h2 className="mt-5 text-3xl font-bold tracking-tight text-primary md:text-5xl text-balance">
-                Circular, climate-resilient production.
+                Sustainability is not an add-on — it is engineered into the system.
               </h2>
+            </Reveal>
+            <Reveal delay={0.1}>
+              <p className="mt-6 text-lg leading-relaxed text-foreground/70">
+                A closed-loop platform combining drought-resilient feed (Moringa), Black Soldier Fly circular protein, hybrid solar + biogas energy, and waste-to-fertilizer cycles — aligned with UN SDG-aligned, climate-smart agriculture.
+              </p>
             </Reveal>
           </div>
 
@@ -357,12 +366,12 @@ const Index = () => {
               <div className="grid md:grid-cols-2">
                 <img src={sustain} alt="Moringa leaves and organic fertilizer pellets" className="h-72 w-full object-cover md:h-full" loading="lazy" width={1280} height={960} />
                 <div className="flex flex-col justify-center gap-4 p-8 md:p-12">
-                  <p className="eyebrow">Eco-centric Farming</p>
+                  <p className="eyebrow">Closed-Loop Production</p>
                   <p className="text-2xl font-bold text-primary leading-snug text-balance">
-                    From planted moringa groves to 99.9% water reuse — sustainability is engineered into our system, not added on top.
+                    From Moringa groves and BSF bioconversion to solar-powered processing — every input cycles back into the system.
                   </p>
                   <Link to="/sustainability" className="group inline-flex items-center gap-2 text-sm font-semibold text-secondary">
-                    Explore our sustainability model
+                    Explore the climate-smart model
                     <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </div>
@@ -382,12 +391,12 @@ const Index = () => {
           </Reveal>
           <Reveal delay={0.05}>
             <h2 className="mt-6 text-4xl font-bold leading-tight tracking-tight md:text-6xl text-balance">
-              A purpose <span className="italic font-light text-secondary">beyond</span> business.
+              Redefining how protein is produced, integrated and delivered — <span className="italic font-light text-secondary">at scale, with purpose.</span>
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/80 leading-relaxed">
-              Nourishing lives through safe, affordable, and scalable protein production — and proving that a national-scale agricultural system can be built in Ethiopia, by Ethiopians.
+              A resource-secured, climate-resilient and scalable agribusiness platform — built in Ethiopia, by Ethiopians, for a national protein future.
             </p>
           </Reveal>
           <Reveal delay={0.15}>
