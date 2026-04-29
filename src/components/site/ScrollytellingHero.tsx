@@ -48,18 +48,18 @@ const ScrollytellingHero = () => {
         >
           <div className="w-full max-w-5xl rounded-[2rem] border border-primary-foreground/15 bg-primary-deep/35 px-6 py-12 text-center shadow-elegant backdrop-blur-md md:px-12 md:py-16">
             <p className="text-xs font-bold uppercase tracking-[0.4em] text-secondary md:text-sm">
-              Birnihigo Integrated Farms
+              A National Protein Platform
             </p>
             <h1 className="mt-8 text-4xl font-extrabold uppercase leading-[1.05] tracking-tight text-primary-foreground sm:text-5xl md:text-6xl lg:text-[4.25rem] text-balance">
-              Pioneering East Africa's<br />
-              <span className="text-secondary">Food Security</span>
+              A System.<br />
+              Not Just a <span className="text-secondary">Farm.</span>
             </h1>
             <p className="mx-auto mt-8 max-w-3xl text-base leading-relaxed text-primary-foreground/85 md:text-lg text-pretty">
-              42-Hectares of Vertically Integrated Poultry Excellence — from hatchery to halal-certified processing.
+              Birnihigo is a fully integrated, climate-resilient agribusiness platform — engineered to solve Ethiopia's protein challenge at national scale.
             </p>
             <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-              <Link to="/model" className="group inline-flex items-center gap-2 rounded-full bg-gradient-saffron px-8 py-4 text-base font-bold text-secondary-foreground shadow-saffron transition-all hover:scale-[1.03] hover:shadow-elegant">
-                Our Story
+              <Link to="/about" className="group inline-flex items-center gap-2 rounded-full bg-gradient-saffron px-8 py-4 text-base font-bold text-secondary-foreground shadow-saffron transition-all hover:scale-[1.03] hover:shadow-elegant">
+                The Strategic Thesis
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
               <Link to="/investors" className="inline-flex items-center gap-2 rounded-full border border-secondary/60 bg-primary-deep/40 px-8 py-4 text-base font-bold text-primary-foreground backdrop-blur-md transition-all hover:bg-secondary hover:text-secondary-foreground hover:border-secondary">
