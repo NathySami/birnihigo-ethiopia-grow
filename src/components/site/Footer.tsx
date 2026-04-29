@@ -60,7 +60,7 @@ export const Footer = () => (
             <li className="flex gap-3"><MapPin className="h-4 w-4 mt-0.5 shrink-0 text-secondary" />Awash Sebat, Afar Region — Operations</li>
             <li className="flex gap-3"><MapPin className="h-4 w-4 mt-0.5 shrink-0 text-secondary" />Kazanchis Garad Bldg, 10th Fl, Addis Ababa</li>
             <li className="flex gap-3"><Mail className="h-4 w-4 mt-0.5 shrink-0 text-secondary" />info@birnihigo.com</li>
-            <li className="flex gap-3"><Phone className="h-4 w-4 mt-0.5 shrink-0 text-secondary" />+251 11 000 0000</li>
+            <li className="flex gap-3"><Phone className="h-4 w-4 mt-0.5 shrink-0 text-secondary" />+251 911 20 94 05 </li>
           </ul>
         </div>
       </div>
