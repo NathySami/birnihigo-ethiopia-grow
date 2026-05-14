@@ -113,7 +113,7 @@ export default function Contact() {
                   <p className="flex items-center gap-2"><Mail className="h-4 w-4 text-secondary" /> finance@birnihigo.com</p>
                   <p className="flex items-center gap-2"><Mail className="h-4 w-4 text-secondary" /> hr@birnihigo.com</p>
                   <p className="flex items-center gap-2"><Mail className="h-4 w-4 text-secondary" /> sales@birnihigo.com</p>
-                  <p className="flex items-center gap-2"><Phone className="h-4 w-4 text-secondary" /> +251 911 20 94 05</p>
+                   <p className="flex items-center gap-2"><Phone className="h-4 w-4 text-secondary" /> +251 911509505</p>
                 </div>
               </div>
             </Reveal>
