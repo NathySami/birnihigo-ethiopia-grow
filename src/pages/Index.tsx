@@ -322,10 +322,8 @@ const Index = () => {
               </div>
             </Reveal>
           </div>
-          <Reveal delay={0.1}>
-            <div className="lg:col-span-6">
-              <img src={farmGrow} alt="Birnihigo grow-out house in Afar showing climate-resilient design and large healthy broiler flock" className="w-full rounded-[2rem] object-cover h-[480px] shadow-elegant" loading="lazy" width={1280} height={960} />
-            </div>
+          <Reveal delay={0.1} className="lg:col-span-6">
+            <img src={farmGrow} alt="Birnihigo grow-out house in Afar showing climate-resilient design and large healthy broiler flock" className="w-full rounded-[2rem] object-cover aspect-[4/3] max-h-[520px] shadow-elegant" loading="lazy" width={1280} height={960} />
           </Reveal>
         </div>
       </section>
