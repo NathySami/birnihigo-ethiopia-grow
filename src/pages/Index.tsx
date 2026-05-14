@@ -267,9 +267,9 @@ const Index = () => {
             </Reveal>
           </div>
 
-          <div className="mt-14 grid gap-4 md:grid-cols-12 md:grid-rows-2">
-            <Reveal>
-              <figure className="relative overflow-hidden rounded-3xl border border-border shadow-card md:col-span-7 md:row-span-2 group">
+          <div className="mt-14 grid gap-4 md:grid-cols-12 md:auto-rows-[260px]">
+            <Reveal className="md:col-span-7 md:row-span-2 h-full">
+              <figure className="relative h-full overflow-hidden rounded-3xl border border-border shadow-card group">
                 <img src={hero} alt="Long Birnihigo broiler house with thousands of birds, automated feeding lines and ventilation" className="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-[1.04]" loading="lazy" width={1920} height={1280} />
                 <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-primary-deep/85 to-transparent p-6 text-primary-foreground">
                   <p className="text-xs font-semibold uppercase tracking-widest text-secondary">Parent Stock Farm</p>
@@ -277,8 +277,8 @@ const Index = () => {
                 </figcaption>
               </figure>
             </Reveal>
-            <Reveal delay={0.06}>
-              <figure className="relative overflow-hidden rounded-3xl border border-border shadow-card md:col-span-5 group">
+            <Reveal delay={0.06} className="md:col-span-5 h-full">
+              <figure className="relative h-full overflow-hidden rounded-3xl border border-border shadow-card group">
                 <img src={farmYoung} alt="Young broiler chicks feeding around pan feeders inside a Birnihigo brooding house" className="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-[1.04]" loading="lazy" width={1280} height={960} />
                 <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-primary-deep/85 to-transparent p-5 text-primary-foreground">
                   <p className="text-xs font-semibold uppercase tracking-widest text-secondary">Brooding</p>
@@ -286,8 +286,8 @@ const Index = () => {
                 </figcaption>
               </figure>
             </Reveal>
-            <Reveal delay={0.12}>
-              <figure className="relative overflow-hidden rounded-3xl border border-border shadow-card md:col-span-5 group">
+            <Reveal delay={0.12} className="md:col-span-5 h-full">
+              <figure className="relative h-full overflow-hidden rounded-3xl border border-border shadow-card group">
                 <img src={farmFeeders} alt="Rows of automated pan feeders surrounded by healthy white broilers at a Birnihigo grow-out house" className="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-[1.04]" loading="lazy" width={1280} height={960} />
                 <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-primary-deep/85 to-transparent p-5 text-primary-foreground">
                   <p className="text-xs font-semibold uppercase tracking-widest text-secondary">Grow-out</p>
