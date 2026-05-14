@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, ArrowUpRight, Building2, Bug, Egg, EggFried, Factory, Leaf, Recycle, ShieldCheck, Sprout, Sun, Truck, Users, Wheat } from "lucide-react";
-import hero from "@/assets/real-broiler-house-interior.jpg";
+import hero from "@/assets/parent-stock-house-wide.jpg";
 import broilers from "@/assets/farm-broilers-detail.jpg";
 import sustain from "@/assets/sustainability.jpg";
 import farmer from "@/assets/farmer.jpg";
@@ -270,7 +270,7 @@ const Index = () => {
           <div className="mt-14 grid gap-4 md:grid-cols-12 md:auto-rows-[260px]">
             <Reveal className="md:col-span-7 md:row-span-2 h-full">
               <figure className="relative h-full overflow-hidden rounded-3xl border border-border shadow-card group">
-                <img src={hero} alt="Long Birnihigo broiler house with thousands of birds, automated feeding lines and ventilation" className="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-[1.04]" loading="lazy" width={1920} height={1280} />
+                <img src={hero} alt="Wide view of a Birnihigo parent stock house with automated feeding lines and healthy breeder flock" className="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-[1.04]" loading="lazy" width={1920} height={1280} />
                 <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-primary-deep/85 to-transparent p-6 text-primary-foreground">
                   <p className="text-xs font-semibold uppercase tracking-widest text-secondary">Parent Stock Farm</p>
                   <p className="mt-1 text-lg font-bold">Climate-controlled, automated, biosecure.</p>
