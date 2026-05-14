@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, ArrowUpRight, Building2, Bug, Egg, EggFried, Factory, Leaf, Recycle, ShieldCheck, Sprout, Sun, Truck, Users, Wheat } from "lucide-react";
-import hero from "@/assets/real-broiler-house-interior.jpg";
+import hero from "@/assets/parent-stock-house-wide.jpg";
 import broilers from "@/assets/farm-broilers-detail.jpg";
 import sustain from "@/assets/sustainability.jpg";
 import farmer from "@/assets/farmer.jpg";
