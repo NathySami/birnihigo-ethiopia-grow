@@ -6,6 +6,7 @@ import { ValueChainFlow } from "@/components/site/ValueChainFlow";
 import sustain from "@/assets/real-farm-landscape.jpg";
 import farmGrow from "@/assets/farm-grow-out.jpg";
 import farmFeederCloseup from "@/assets/farm-feeder-closeup.jpg";
+import sustainableFlock from "@/assets/sustainable-broiler-flock.jpg";
 
 const groups = [
   { title: "Circular Economy", icon: Recycle, items: ["100% waste converted to fertilizer", "99.9% treated water reuse", "On-site biogas production"] },
@@ -50,8 +51,8 @@ export default function Sustainability() {
 
       <section className="bg-background py-24">
         <div className="container-wide grid gap-12 lg:grid-cols-12 lg:items-center">
-          <Reveal>
-            <img src={farmGrow} alt="Healthy broiler flock in a Birnihigo bio-secure grow-out house — sustainable, controlled production" className="lg:col-span-5 w-full rounded-[2rem] object-cover h-[480px] shadow-elegant" loading="lazy" width={1280} height={960} />
+          <Reveal className="lg:col-span-5">
+            <img src={sustainableFlock} alt="Healthy broiler flock inside a Birnihigo bio-secure, climate-controlled production house" className="w-full rounded-[2rem] object-cover aspect-[4/5] max-h-[560px] shadow-elegant" loading="lazy" width={1200} height={1500} />
           </Reveal>
           <div className="lg:col-span-7 grid gap-4 sm:grid-cols-2">
             {[
