@@ -14,7 +14,7 @@ import { Reveal } from "@/components/site/Reveal";
 import { MetricCounter } from "@/components/site/MetricCounter";
 import { Parallax } from "@/components/site/Parallax";
 import { ExportMap } from "@/components/site/ExportMap";
-import ScrollytellingHero from "@/components/site/ScrollytellingHero";
+import VideoHero from "@/components/site/VideoHero";
 
 const valueChain = [
   { icon: Egg, title: "Parent Stock", note: "Genetic foundation" },
@@ -152,7 +152,7 @@ const Index = () => {
 
   return (
     <>
-      <ScrollytellingHero />
+      <VideoHero />
 
       {/* 2 — STRATEGIC POSITIONING */}
       <section className="relative bg-background py-32 md:py-44">
