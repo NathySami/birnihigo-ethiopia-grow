@@ -1,16 +1,23 @@
 ---
 name: Brand tokens
-description: Birnihigo brand colors, typography, usage proportions from official Brand Guidelines pp.11-15
+description: Birnihigo brand colors, typography, usage proportions per official Brand Guidelines (70/20/10)
 type: design
 ---
-Colors (already in src/index.css and tailwind.config.ts):
-- Primary Café Noir #4F3C1C → --primary 38 48% 32%
-- Primary Deep #3A2D14 → --primary-deep 38 55% 20%
-- Secondary Deep Saffron #FEA42A → --secondary 35 99% 58%
-- Accent Dandelion #FFD275 → --accent 40 100% 73%
-- White Chocolate #EFE7DC → --cream 35 38% 90%
-- Chinese Bronze #CD8C24 → --bronze 38 70% 47%
+Colors (in src/index.css and tailwind.config.ts):
+- Café Noir #4F3C1C → --primary / --cafe (38 48% 32%) — DOMINANT text + dark surfaces
+- Café Deep #3A2D14 → --cafe-deep / --primary-deep (38 55% 20%) — cinematic dark backgrounds
+- White Chocolate #EFE7DC → --cream (35 38% 90%) — DOMINANT light surface
+- Deep Saffron #FEA42A → --secondary (35 99% 58%) — ACCENT ONLY (~10%): CTAs, eyebrows, key numerals, single hero stroke
+- Dandelion #FFD275 → --accent (40 100% 73%)
+- Chinese Bronze #CD8C24 → --bronze (38 70% 47%) — secondary accent for eyebrows on cream
+- Ink #0A0A0A → --ink (0 0% 6%) — cinematic closing / biosecurity sections
 
-Usage proportions per guidelines: 70% Café Noir / 20% Deep Saffron / 10% accents.
+Usage ratio (mandatory): ~70% Café Noir + Cream base / ~20% neutral support / ~10% Deep Saffron accents.
+Do NOT make saffron a section background; keep it as accent. Saffron-dominant washes were rejected — use Café Noir or Cream as section grounds.
 
-Typography: Parkinsans (Google Fonts) — geometric sans serif, used for both display headings (700/800 weight, -0.02em tracking) and body. No serif fonts.
+Typography:
+- Display: Parkinsans (700/800, tracking -0.025 to -0.035em) via .display-xl / .display-lg / .num-display utilities
+- Body: Inter (loaded from Google Fonts) — set as default sans/body in tailwind.config.ts
+- Reduced paragraph density, generous leading, oversized headlines
+
+Gradients: --gradient-cinematic (dark cafe overlay), --gradient-editorial (cream-to-cream-deep). Avoid saffron gradients on large surfaces.
