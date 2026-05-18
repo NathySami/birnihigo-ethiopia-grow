@@ -2,7 +2,6 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import heroVideo from "@/assets/hero-drone.mp4";
 import heroPoster from "@/assets/aerial-afar-farm.jpg";
 
 export const VideoHero = () => {
