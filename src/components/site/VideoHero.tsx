@@ -22,7 +22,7 @@ export const VideoHero = () => {
         className="absolute inset-0 will-change-transform"
       >
         <video
-          src={heroVideo}
+          src="/hero-drone.mp4"
           poster={heroPoster}
           autoPlay
           muted
