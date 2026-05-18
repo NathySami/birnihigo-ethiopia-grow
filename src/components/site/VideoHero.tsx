@@ -4,6 +4,7 @@ import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroVideo from "@/assets/hero-drone.mp4.asset.json";
 import heroPoster from "@/assets/aerial-afar-farm.jpg";
+
 export const VideoHero = () => {
   const ref = useRef<HTMLDivElement>(null);
   const reduce = useReducedMotion();
@@ -13,6 +14,7 @@ export const VideoHero = () => {
   const overlay = useTransform(scrollY, [0, 600], [0.55, 0.85]);
   const contentOpacity = useTransform(scrollY, [0, 400, 600], [1, 0.6, 0]);
   const contentY = useTransform(scrollY, [0, 500], [0, -60]);
+
   return (
     <section ref={ref} className="relative h-[100svh] min-h-[640px] w-full overflow-hidden bg-cafe-deep">
       <motion.div
@@ -31,12 +33,14 @@ export const VideoHero = () => {
           aria-label="Aerial drone footage of Birnihigo industrial poultry infrastructure in Afar, Ethiopia"
         />
       </motion.div>
+
       <motion.div
         style={{ opacity: overlay }}
         className="absolute inset-0 bg-gradient-to-b from-cafe-deep/40 via-cafe-deep/35 to-cafe-deep/95"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-cafe-deep/80 via-cafe-deep/30 to-transparent" />
       <div className="absolute inset-0 mix-blend-overlay opacity-25 [background-image:radial-gradient(hsl(40_100%_73%/0.18)_1px,transparent_1px)] [background-size:4px_4px]" />
+
       <motion.div
         style={reduce ? undefined : { opacity: contentOpacity, y: contentY }}
         className="container-wide relative z-10 flex h-full flex-col justify-end pb-20 md:pb-28"
@@ -49,6 +53,7 @@ export const VideoHero = () => {
           <span className="h-px w-10 bg-secondary" />
           African Protein Infrastructure
         </motion.p>
+
         <motion.h1
           initial={{ opacity: 0, y: 28 }} animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.1, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
@@ -57,6 +62,7 @@ export const VideoHero = () => {
           Engineered for <span className="text-secondary">scale.</span><br />
           Built for <span className="italic font-light">resilience.</span>
         </motion.h1>
+
         <motion.p
           initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.55 }}
@@ -66,6 +72,7 @@ export const VideoHero = () => {
           delivering industrial discipline, climate-smart systems and export-grade
           quality from the Horn of Africa.
         </motion.p>
+
         <motion.div
           initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.85 }}
@@ -87,6 +94,7 @@ export const VideoHero = () => {
           </Link>
         </motion.div>
       </motion.div>
+
       <motion.div
         style={reduce ? undefined : { opacity: contentOpacity }}
         className="absolute bottom-6 left-1/2 z-10 -translate-x-1/2 text-cream/60"
@@ -99,4 +107,5 @@ export const VideoHero = () => {
     </section>
   );
 };
+
 export default VideoHero;
