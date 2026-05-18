@@ -9,7 +9,7 @@
    Typeface: Parkinsans (display + body)
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
 
 @layer base {
   :root {
@@ -67,6 +67,8 @@
     --gradient-cafe: linear-gradient(135deg, hsl(38 55% 20%) 0%, hsl(38 48% 32%) 100%);
     --gradient-cream: linear-gradient(180deg, hsl(35 40% 97%) 0%, hsl(35 38% 90%) 100%);
     --gradient-ink: linear-gradient(135deg, hsl(0 0% 6%) 0%, hsl(38 55% 14%) 100%);
+    --gradient-cinematic: linear-gradient(180deg, hsl(38 55% 14% / 0) 0%, hsl(38 55% 12% / 0.45) 55%, hsl(38 55% 10% / 0.92) 100%);
+    --gradient-editorial: linear-gradient(180deg, hsl(35 40% 97%) 0%, hsl(35 38% 92%) 100%);
 
     /* Shadows */
     --shadow-soft: 0 4px 20px -4px hsl(38 48% 18% / 0.12);
@@ -134,7 +136,12 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'Parkinsans', system-ui, -apple-system, sans-serif;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-feature-settings: "ss01", "cv11";
+  }
+
+  .font-display {
+    font-family: 'Parkinsans', system-ui, sans-serif;
     font-feature-settings: "ss01", "cv11";
   }
 
@@ -159,6 +166,8 @@
   .bg-gradient-cafe { background-image: var(--gradient-cafe); }
   .bg-gradient-cream { background-image: var(--gradient-cream); }
   .bg-gradient-ink { background-image: var(--gradient-ink); }
+  .bg-gradient-cinematic { background-image: var(--gradient-cinematic); }
+  .bg-gradient-editorial { background-image: var(--gradient-editorial); }
 
   .shadow-soft { box-shadow: var(--shadow-soft); }
   .shadow-elegant { box-shadow: var(--shadow-elegant); }
@@ -179,6 +188,29 @@
 
   .container-tight { @apply mx-auto max-w-6xl px-6; }
   .container-wide { @apply mx-auto max-w-7xl px-6; }
+  .container-narrow { @apply mx-auto max-w-4xl px-6; }
+
+  .display-xl {
+    font-family: 'Parkinsans', system-ui, sans-serif;
+    font-weight: 800;
+    font-size: clamp(2.75rem, 7vw, 6.5rem);
+    line-height: 0.98;
+    letter-spacing: -0.035em;
+  }
+  .display-lg {
+    font-family: 'Parkinsans', system-ui, sans-serif;
+    font-weight: 700;
+    font-size: clamp(2rem, 4.5vw, 4rem);
+    line-height: 1.04;
+    letter-spacing: -0.025em;
+  }
+  .num-display {
+    font-family: 'Parkinsans', system-ui, sans-serif;
+    font-weight: 800;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.04em;
+  }
+  .hairline { @apply h-px w-full bg-cafe/10; }
 }
 
 @layer components {
